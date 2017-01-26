@@ -1,0 +1,3 @@
+*check others' contributions to the source code
+*revert to an older "working" version
+*work on a piece of code concurrently with others
