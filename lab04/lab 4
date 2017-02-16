@@ -1,0 +1,50 @@
+/// This is a crossword puzzle program written in C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct clue
+{
+	char GREEN[24] = "The color of most grass";
+	char GROWS[25] = "This is what grass does";
+	char RARE[23] = "A hard to find object";
+	char NASA[37] = "A space program with little funding";
+	
+
+}
+
+int main()
+{
+	char Blank[16][16] = { {#,#,#,#,#},{#,#,#,#,#},
+	{#,#,#,#,#},{#,#,#,#,#},{#,#,#,#,#}
+	};
+	//char CW[6][6] = {GREEN};
+	
+	for (i=0; i<=4; i++)
+	{
+		for (j=0; j<=4; j++)
+		{
+		
+			printf("5X5 CROSSWORD PUZZLE \n \n Blank[%c][%c]", i,j);	
+		}
+		
+	}
+	
+	///if (
+	//printf("Harro WorD \n");
+
+
+
+
+
+
+
+
+
+
+	system ("PAUSE");
+	return 0;
+
+
+}
