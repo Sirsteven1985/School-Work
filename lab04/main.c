@@ -8,7 +8,6 @@
 #include <errno.h>
 #include "functions.h"
 
-
 ///function declarations
 char** createArray(int rows, int cols);
 void fillArray(char** myArray, int rows, int cols);
@@ -76,7 +75,7 @@ int main(void)
     }
 
     int sel;
-    char *ans[30];
+    char ans[30];
     int clue_num =50;
     int dun=0;
     while(clue_num!=0)
