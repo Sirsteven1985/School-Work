@@ -73,7 +73,6 @@ int main(void)
         printf("%i          %c           %i/%i       %.40s\n",j+1,clue[j].orient, clue[j].row, clue[j].col, clue[j].clues);
 
     }
-
     int sel;
     char ans[30];
     int clue_num =50;
