@@ -32,7 +32,7 @@ void bubbleSort(int *array_start, int array_size)
   printf("Using bubble sort algorithm...\n");
 
   int temp;
- 
+
   for (int i = (array_size - 1); i > 0; i--)
     {
       for (int j = 1; j <= i; j++)
@@ -45,8 +45,8 @@ void bubbleSort(int *array_start, int array_size)
 	    }
 	}
     }
-  
-  
+
+
   return;
 }
 
@@ -76,3 +76,4 @@ bool verifySort(int *array_start, int array_size)
       return true;
     }
 }
+
