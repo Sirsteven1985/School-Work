@@ -1,0 +1,178 @@
+==10660== Memcheck, a memory error detector
+==10660== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==10660== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10660== Command: ./amplify IMAGES/Lenna_org_1024.pgm 11 1.1 2
+==10660== Parent PID: 8817
+==10660== 
+==10660== Invalid read of size 4
+==10660==    at 0x4043B0: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:355)
+==10660==    by 0x40157D: main (main.c:120)
+==10660==  Address 0xaeae040 is 0 bytes after a block of size 4,194,304 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40134E: main (main.c:77)
+==10660== 
+==10660== Invalid read of size 4
+==10660==    at 0x4047A2: vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:358)
+==10660==    by 0x40157D: main (main.c:120)
+==10660==  Address 0xaeae044 is 4 bytes after a block of size 4,194,304 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40134E: main (main.c:77)
+==10660== 
+==10660== Invalid read of size 4
+==10660==    at 0x405261: horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (amplify.h:178)
+==10660==    by 0x4015B8: main (main.c:123)
+==10660==  Address 0xaeae040 is 0 bytes after a block of size 4,194,304 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40134E: main (main.c:77)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x40171F: main (main.c:138)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x401728: main (main.c:138)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x401C62: main (main.c:144)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x401C67: main (main.c:144)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x401C92: main (main.c:145)
+==10660== 
+==10660== Conditional jump or move depends on uninitialised value(s)
+==10660==    at 0x401CAA: main (main.c:145)
+==10660== 
+==10660== Syscall param write(buf) points to uninitialised byte(s)
+==10660==    at 0x57D16E0: __write_nocancel (syscall-template.S:84)
+==10660==    by 0x5753BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10660==    by 0x5755408: new_do_write (fileops.c:518)
+==10660==    by 0x5755408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10660==    by 0x575447C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10660==    by 0x57497BA: fwrite (iofwrite.c:39)
+==10660==    by 0x406083: write_image (image_template.h:127)
+==10660==    by 0x406083: void write_image_template<float>(char*, float*, int, int) (image_template.h:93)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660==  Address 0x5bc0691 is 17 bytes inside a block of size 4,096 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x57481D4: _IO_file_doallocate (filedoalloc.c:127)
+==10660==    by 0x5756593: _IO_doallocbuf (genops.c:398)
+==10660==    by 0x57558F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10660==    by 0x575428C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10660==    by 0x5728240: vfprintf (vfprintf.c:1320)
+==10660==    by 0x57F0FD8: __fprintf_chk (fprintf_chk.c:35)
+==10660==    by 0x406070: fprintf (stdio2.h:98)
+==10660==    by 0x406070: write_image (image_template.h:126)
+==10660==    by 0x406070: void write_image_template<float>(char*, float*, int, int) (image_template.h:93)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660== 
+==10660== Syscall param write(buf) points to uninitialised byte(s)
+==10660==    at 0x57D16E0: __write_nocancel (syscall-template.S:84)
+==10660==    by 0x5753BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10660==    by 0x5754389: new_do_write (fileops.c:518)
+==10660==    by 0x5754389: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1342)
+==10660==    by 0x57497BA: fwrite (iofwrite.c:39)
+==10660==    by 0x406083: write_image (image_template.h:127)
+==10660==    by 0x406083: void write_image_template<float>(char*, float*, int, int) (image_template.h:93)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660==  Address 0xbeb403e is 4,094 bytes inside a block of size 4,194,304 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x405D0F: void write_image_template<float>(char*, float*, int, int) (image_template.h:88)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660== 
+==10660== Syscall param write(buf) points to uninitialised byte(s)
+==10660==    at 0x57D16E0: __write_nocancel (syscall-template.S:84)
+==10660==    by 0x5753BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10660==    by 0x5755408: new_do_write (fileops.c:518)
+==10660==    by 0x5755408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10660==    by 0x57549AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==10660==    by 0x57483EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==10660==    by 0x40608B: write_image (image_template.h:129)
+==10660==    by 0x40608B: void write_image_template<float>(char*, float*, int, int) (image_template.h:93)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660==  Address 0x5bc0690 is 16 bytes inside a block of size 4,096 alloc'd
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x57481D4: _IO_file_doallocate (filedoalloc.c:127)
+==10660==    by 0x5756593: _IO_doallocbuf (genops.c:398)
+==10660==    by 0x57558F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10660==    by 0x575428C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10660==    by 0x5728240: vfprintf (vfprintf.c:1320)
+==10660==    by 0x57F0FD8: __fprintf_chk (fprintf_chk.c:35)
+==10660==    by 0x406070: fprintf (stdio2.h:98)
+==10660==    by 0x406070: write_image (image_template.h:126)
+==10660==    by 0x406070: void write_image_template<float>(char*, float*, int, int) (image_template.h:93)
+==10660==    by 0x401AF3: main (main.c:216)
+==10660== 
+==10660== 
+==10660== HEAP SUMMARY:
+==10660==     in use at exit: 50,405,372 bytes in 11 blocks
+==10660==   total heap usage: 89 allocs, 78 frees, 118,633,772 bytes allocated
+==10660== 
+==10660== 16 bytes in 1 blocks are definitely lost in loss record 1 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x4028BB: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:34)
+==10660==    by 0x4017E5: main (main.c:158)
+==10660== 
+==10660== 36 bytes in 1 blocks are definitely lost in loss record 2 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40289D: mean_keeping(float*, float*, int, int, int, float*, float*, float*) (amplify.h:32)
+==10660==    by 0x4017E5: main (main.c:158)
+==10660== 
+==10660== 484 bytes in 1 blocks are definitely lost in loss record 3 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x4011E0: main (main.c:60)
+==10660== 
+==10660== 484 bytes in 1 blocks are definitely lost in loss record 4 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x4011EB: main (main.c:61)
+==10660== 
+==10660== 72,704 bytes in 1 blocks are still reachable in loss record 5 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x4EC3EFF: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==10660==    by 0x40104E9: call_init.part.0 (dl-init.c:72)
+==10660==    by 0x40105FA: call_init (dl-init.c:30)
+==10660==    by 0x40105FA: _dl_init (dl-init.c:120)
+==10660==    by 0x4000CF9: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+==10660==    by 0x4: ???
+==10660==    by 0xFFF0001BA: ???
+==10660==    by 0xFFF0001C4: ???
+==10660==    by 0xFFF0001DE: ???
+==10660==    by 0xFFF0001E1: ???
+==10660==    by 0xFFF0001E5: ???
+==10660== 
+==10660== 4,194,304 bytes in 1 blocks are possibly lost in loss record 6 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40138E: main (main.c:80)
+==10660== 
+==10660== 4,194,304 bytes in 1 blocks are possibly lost in loss record 7 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x402214: double_thresh(float*, float*, int, int) (main.h:127)
+==10660==    by 0x40150E: main (main.c:109)
+==10660== 
+==10660== 4,194,304 bytes in 1 blocks are definitely lost in loss record 8 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x400E52: read_image_template<float> (image_template.h:38)
+==10660==    by 0x400E52: main (main.c:48)
+==10660== 
+==10660== 4,194,304 bytes in 1 blocks are definitely lost in loss record 9 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x40136E: main (main.c:79)
+==10660== 
+==10660== 16,777,216 bytes in 1 blocks are possibly lost in loss record 10 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x401301: main (main.c:74)
+==10660== 
+==10660== 16,777,216 bytes in 1 blocks are definitely lost in loss record 11 of 11
+==10660==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10660==    by 0x401330: main (main.c:75)
+==10660== 
+==10660== LEAK SUMMARY:
+==10660==    definitely lost: 25,166,844 bytes in 7 blocks
+==10660==    indirectly lost: 0 bytes in 0 blocks
+==10660==      possibly lost: 25,165,824 bytes in 3 blocks
+==10660==    still reachable: 72,704 bytes in 1 blocks
+==10660==         suppressed: 0 bytes in 0 blocks
+==10660== 
+==10660== For counts of detected and suppressed errors, rerun with: -v
+==10660== Use --track-origins=yes to see where uninitialised values come from
+==10660== ERROR SUMMARY: 22407393 errors from 22 contexts (suppressed: 0 from 0)

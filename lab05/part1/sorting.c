@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
  
       mergeSort(my_array, temp_array, ARRAY_SIZE);
 
-      free(temp_array); // Release dynamic memory after use
+     free(temp_array); // Release dynamic memory after use
     }
   else
     {
