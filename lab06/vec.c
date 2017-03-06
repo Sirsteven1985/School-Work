@@ -75,4 +75,10 @@ long int vec_length(vec_ptr v)
     return v->len;
 }
 
-
+int get_vec_start(vec_ptr v, data_t *dest)
+{
+  if (v->data ==NULL)
+    return 0;
+  *dest = v->data[0];
+  return 1;
+}
