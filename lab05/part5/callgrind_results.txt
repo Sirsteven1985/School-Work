@@ -1,0 +1,2200 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out' (creator: callgrind-3.11.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 1199087441
+Trigger: Program termination
+Profiled target:  ./amplify IMAGES/Lenna_org_1024.pgm 11 1.1 2 (PID 10453, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       100
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+           Ir 
+--------------------------------------------------------------------------------
+6,962,390,673  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+           Ir  file:function
+--------------------------------------------------------------------------------
+5,097,922,722  main.h:void convolve<float>(float*, int, int, float*, int, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+  576,237,656  amplify.h:mean_keeping(float*, float*, int, int, int, float*, float*, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+  359,033,863  main.c:main [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+  343,617,755  /build/glibc-t3gR2i/glibc-2.23/stdlib/msort.c:msort_with_tmp.part.0'2 [/lib/x86_64-linux-gnu/libc-2.23.so]
+  170,974,969  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_atan2.c:__ieee754_atan2_avx [/lib/x86_64-linux-gnu/libm-2.23.so]
+   57,767,898  main.h:comp(void const*, void const*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   47,833,461  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memcpy.S:__GI_memcpy [/lib/x86_64-linux-gnu/libc-2.23.so]
+   41,149,041  main.h:void nonmaximal_suppression<float>(float*, float*, int, int, int) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   37,099,311  amplify.h:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   31,009,804  amplify.h:vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   28,835,970  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S:__memcpy_avx_unaligned [/lib/x86_64-linux-gnu/libc-2.23.so]
+   28,312,095  image_template.h:void write_image_template<float>(char*, float*, int, int) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   23,068,672  /build/glibc-t3gR2i/glibc-2.23/math/w_atan2.c:atan2 [/lib/x86_64-linux-gnu/libm-2.23.so]
+   22,700,313  main.h:edge_linking(float*, float*, int, int) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   18,874,368  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memset-avx2.S:__memset_avx2 [/lib/x86_64-linux-gnu/libc-2.23.so]
+   16,252,803  /build/glibc-t3gR2i/glibc-2.23/stdlib/msort.c:msort_with_tmp.part.0 [/lib/x86_64-linux-gnu/libc-2.23.so]
+   12,600,351  main.h:angle(float*, float*, int, int, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   12,596,246  main.h:magnitude(float*, float*, int, int, float*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   11,942,030  main.h:double_thresh(float*, float*, int, int) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+   10,485,760  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/i386/fpu/fenv_private.h:__ieee754_atan2_avx
+    4,218,634  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/generic/math_private.h:__ieee754_atan2_avx
+    1,902,158  /usr/include/c++/5/bits/stl_vector.h:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+    1,720,673  /usr/include/c++/5/bits/stl_vector.h:vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+    1,704,000  image_template.h:main
+      892,190  /build/glibc-t3gR2i/glibc-2.23/elf/dl-lookup.c:_dl_lookup_symbol_x [/lib/x86_64-linux-gnu/ld-2.23.so]
+      804,773  /usr/include/c++/5/ext/new_allocator.h:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+      804,773  /usr/include/c++/5/ext/new_allocator.h:vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+      563,216  /build/glibc-t3gR2i/glibc-2.23/elf/dl-lookup.c:do_lookup_x [/lib/x86_64-linux-gnu/ld-2.23.so]
+      336,952  /usr/include/c++/5/bits/vector.tcc:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+      252,093  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+      211,552  /usr/include/c++/5/bits/vector.tcc:vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+      108,442  /usr/include/c++/5/bits/stl_iterator.h:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*)
+      107,448  /build/glibc-t3gR2i/glibc-2.23/elf/dl-lookup.c:check_match [/lib/x86_64-linux-gnu/ld-2.23.so]
+       81,275  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../strcmp.S:strcmp [/lib/x86_64-linux-gnu/ld-2.23.so]
+       80,711  /build/glibc-t3gR2i/glibc-2.23/elf/do-rel.h:_dl_relocate_object
+       56,475  /build/glibc-t3gR2i/glibc-2.23/elf/dl-addr.c:_dl_addr [/lib/x86_64-linux-gnu/libc-2.23.so]
+       43,266  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_pow.c:__ieee754_pow_sse2 [/lib/x86_64-linux-gnu/libm-2.23.so]
+       19,720  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_exp.c:__exp1 [/lib/x86_64-linux-gnu/libm-2.23.so]
+       14,122  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:_int_malloc [/lib/x86_64-linux-gnu/libc-2.23.so]
+       10,722  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+        9,832  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S:__memmove_avx_unaligned [/lib/x86_64-linux-gnu/libc-2.23.so]
+        8,411  /build/glibc-t3gR2i/glibc-2.23/elf/dl-misc.c:_dl_name_match_p [/lib/x86_64-linux-gnu/ld-2.23.so]
+        7,825  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_default_xsputn [/lib/x86_64-linux-gnu/libc-2.23.so]
+        6,710  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:_int_free [/lib/x86_64-linux-gnu/libc-2.23.so]
+        6,653  /build/glibc-t3gR2i/glibc-2.23/stdio-common/vfprintf.c:vfprintf [/lib/x86_64-linux-gnu/libc-2.23.so]
+        5,160  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/memcpy.S:__GI_mempcpy [/lib/x86_64-linux-gnu/libc-2.23.so]
+        4,818  /build/glibc-t3gR2i/glibc-2.23/elf/dl-version.c:_dl_check_map_versions [/lib/x86_64-linux-gnu/ld-2.23.so]
+        4,609  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+        4,598  /build/glibc-t3gR2i/glibc-2.23/math/w_pow.c:pow [/lib/x86_64-linux-gnu/libm-2.23.so]
+        3,980  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc [/lib/x86_64-linux-gnu/libc-2.23.so]
+        3,090  /build/glibc-t3gR2i/glibc-2.23/elf/dl-cache.c:_dl_cache_libcmp [/lib/x86_64-linux-gnu/ld-2.23.so]
+        2,866  main.h:gaussianY_mask(float*, int, float) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+        2,828  /build/glibc-t3gR2i/glibc-2.23/elf/dl-version.c:match_symbol [/lib/x86_64-linux-gnu/ld-2.23.so]
+        2,750  /build/glibc-t3gR2i/glibc-2.23/elf/dl-deps.c:_dl_map_object_deps [/lib/x86_64-linux-gnu/ld-2.23.so]
+        2,531  main.h:gaussianX_mask(float*, int, float) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+        2,368  /build/glibc-t3gR2i/glibc-2.23/elf/../elf/dl-runtime.c:_dl_fixup [/lib/x86_64-linux-gnu/ld-2.23.so]
+        2,352  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:_dl_map_object [/lib/x86_64-linux-gnu/ld-2.23.so]
+        2,320  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/i386/fpu/fenv_private.h:__ieee754_pow_sse2
+        2,245  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free [/lib/x86_64-linux-gnu/libc-2.23.so]
+        2,134  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:_dl_map_object_from_fd [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,530  /build/glibc-t3gR2i/glibc-2.23/elf/get-dynamic-info.h:_dl_map_object_from_fd
+        1,437  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc_consolidate [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,350  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,303  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:sysmalloc [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,276  /build/glibc-t3gR2i/glibc-2.23/stdio-common/_itoa.c:_itoa_word [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,256  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:open_verify.constprop.7 [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,216  /build/glibc-t3gR2i/glibc-2.23/elf/dl-cache.c:_dl_load_cache_lookup [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,210  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,183  /build/glibc-t3gR2i/glibc-2.23/elf/dl-object.c:_dl_new_object [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,144  /usr/include/c++/5/bits/vector.tcc:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+        1,138  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memcpy.S:memcpy [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,118  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/wordsize-64/mmap.c:mmap [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,112  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strchr.S:strchrnul [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,110  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+        1,096  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c:__libc_memalign [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,058  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:dl_main [/lib/x86_64-linux-gnu/ld-2.23.so]
+        1,016  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c:strsep [/lib/x86_64-linux-gnu/ld-2.23.so]
+          996  /build/glibc-t3gR2i/glibc-2.23/elf/dl-fini.c:_dl_fini [/lib/x86_64-linux-gnu/ld-2.23.so]
+          876  /usr/include/c++/5/ext/new_allocator.h:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+          871  /build/glibc-t3gR2i/glibc-2.23/elf/dl-reloc.c:_dl_relocate_object [/lib/x86_64-linux-gnu/ld-2.23.so]
+          852  /usr/include/c++/5/bits/stl_algobase.h:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+          814  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memset.S:memset [/lib/x86_64-linux-gnu/ld-2.23.so]
+          778  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/memcpy.S:mempcpy [/lib/x86_64-linux-gnu/ld-2.23.so]
+          768  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strlen.S:strlen [/lib/x86_64-linux-gnu/ld-2.23.so]
+          754  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memcmp.S:bcmp [/lib/x86_64-linux-gnu/ld-2.23.so]
+          752  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:open_path [/lib/x86_64-linux-gnu/ld-2.23.so]
+          728  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_un_link [/lib/x86_64-linux-gnu/libc-2.23.so]
+          680  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_link_in [/lib/x86_64-linux-gnu/libc-2.23.so]
+          680  /build/glibc-t3gR2i/glibc-2.23/stdlib/../stdlib/strtol_l.c:____strtol_l_internal [/lib/x86_64-linux-gnu/libc-2.23.so]
+          588  /usr/include/c++/5/bits/stl_vector.h:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+          556  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../strchr.S:index [/lib/x86_64-linux-gnu/ld-2.23.so]
+          552  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/cacheinfo.c:intel_check_word [/lib/x86_64-linux-gnu/libc-2.23.so]
+          538  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_setb [/lib/x86_64-linux-gnu/libc-2.23.so]
+          528  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+          524  /build/glibc-t3gR2i/glibc-2.23/elf/./dl-map-segments.h:_dl_map_object_from_fd
+          520  /build/glibc-t3gR2i/glibc-2.23/elf/dl-error.c:_dl_catch_error [/lib/x86_64-linux-gnu/ld-2.23.so]
+          511  /build/glibc-t3gR2i/glibc-2.23/elf/../elf/dl-sysdep.c:_dl_sysdep_start [/lib/x86_64-linux-gnu/ld-2.23.so]
+          494  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_fopen@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+          448  /build/glibc-t3gR2i/glibc-2.23/libio/iofclose.c:fclose@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+          447  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_close_it@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+          441  /build/glibc-t3gR2i/glibc-2.23/malloc/arena.c:ptmalloc_init.part.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+          440  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_no_init [/lib/x86_64-linux-gnu/libc-2.23.so]
+          432  /build/glibc-t3gR2i/glibc-2.23/debug/printf_chk.c:__printf_chk [/lib/x86_64-linux-gnu/libc-2.23.so]
+          425  /build/glibc-t3gR2i/glibc-2.23/elf/dl-environ.c:_dl_next_ld_env_entry [/lib/x86_64-linux-gnu/ld-2.23.so]
+          398  /build/glibc-t3gR2i/glibc-2.23/elf/dl-init.c:call_init.part.0 [/lib/x86_64-linux-gnu/ld-2.23.so]
+          376  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_old_init [/lib/x86_64-linux-gnu/libc-2.23.so]
+          368  /build/glibc-t3gR2i/glibc-2.23/debug/vsprintf_chk.c:__vsprintf_chk [/lib/x86_64-linux-gnu/libc-2.23.so]
+          367  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_finalize.c:__cxa_finalize [/lib/x86_64-linux-gnu/libc-2.23.so]
+          364  /build/glibc-t3gR2i/glibc-2.23/libio/iofwrite.c:fwrite [/lib/x86_64-linux-gnu/libc-2.23.so]
+          358  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:_dl_init_paths [/lib/x86_64-linux-gnu/ld-2.23.so]
+          352  /build/glibc-t3gR2i/glibc-2.23/string/../bits/stdlib-bsearch.h:intel_check_word
+          343  /build/glibc-t3gR2i/glibc-2.23/debug/fprintf_chk.c:__fprintf_chk [/lib/x86_64-linux-gnu/libc-2.23.so]
+          336  /build/glibc-t3gR2i/glibc-2.23/libio/filedoalloc.c:_IO_file_doallocate [/lib/x86_64-linux-gnu/libc-2.23.so]
+          325  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_allocate_tls_storage [/lib/x86_64-linux-gnu/ld-2.23.so]
+          312  /build/glibc-t3gR2i/glibc-2.23/libio/iofopen.c:__fopen_internal [/lib/x86_64-linux-gnu/libc-2.23.so]
+          280  /build/glibc-t3gR2i/glibc-2.23/libio/strops.c:_IO_str_init_static_internal [/lib/x86_64-linux-gnu/libc-2.23.so]
+          280  /build/glibc-t3gR2i/glibc-2.23/elf/dl-hwcaps.c:_dl_important_hwcaps [/lib/x86_64-linux-gnu/ld-2.23.so]
+          279  /build/glibc-t3gR2i/glibc-2.23/setjmp/../sysdeps/x86_64/setjmp.S:__sigsetjmp [/lib/x86_64-linux-gnu/libc-2.23.so]
+          272  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_open [/lib/x86_64-linux-gnu/libc-2.23.so]
+          260  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:rtld_lock_default_lock_recursive [/lib/x86_64-linux-gnu/ld-2.23.so]
+          260  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:rtld_lock_default_unlock_recursive [/lib/x86_64-linux-gnu/ld-2.23.so]
+          258  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_atexit.c:__new_exitfn [/lib/x86_64-linux-gnu/libc-2.23.so]
+          258  /build/glibc-t3gR2i/glibc-2.23/elf/get-dynamic-info.h:dl_main
+          255  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strtok.S:strtok [/lib/x86_64-linux-gnu/libc-2.23.so]
+          254  /build/glibc-t3gR2i/glibc-2.23/elf/get-dynamic-info.h:_dl_start
+          250  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx [/lib/x86_64-linux-gnu/ld-2.23.so]
+          244  /build/glibc-t3gR2i/glibc-2.23/elf/dl-object.c:_dl_add_to_namespace_list [/lib/x86_64-linux-gnu/ld-2.23.so]
+          230  /build/glibc-t3gR2i/glibc-2.23/stdio-common/printf-parse.h:vfprintf
+          204  /build/glibc-t3gR2i/glibc-2.23/elf/dl-deps.c:openaux [/lib/x86_64-linux-gnu/ld-2.23.so]
+          204  /build/glibc-t3gR2i/glibc-2.23/libio/iogetline.c:_IO_getline_info [/lib/x86_64-linux-gnu/libc-2.23.so]
+          192  /build/glibc-t3gR2i/glibc-2.23/string/../string/strstr.c:__GI_strstr [/lib/x86_64-linux-gnu/libc-2.23.so]
+          176  /usr/include/c++/5/bits/stl_iterator.h:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+          168  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-machine.h:_dl_start
+          162  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_doallocbuf [/lib/x86_64-linux-gnu/libc-2.23.so]
+          161  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c:fillin_rpath [/lib/x86_64-linux-gnu/ld-2.23.so]
+          161  /build/glibc-t3gR2i/glibc-2.23/elf/dl-lookup.c:_dl_setup_hash [/lib/x86_64-linux-gnu/ld-2.23.so]
+          159  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/cacheinfo.c:init_cacheinfo [/lib/x86_64-linux-gnu/libc-2.23.so]
+          156  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c:malloc [/lib/x86_64-linux-gnu/ld-2.23.so]
+          156  /build/glibc-t3gR2i/glibc-2.23/libio/iofgets.c:fgets [/lib/x86_64-linux-gnu/libc-2.23.so]
+          153  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c:calloc [/lib/x86_64-linux-gnu/ld-2.23.so]
+          152  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_default_finish [/lib/x86_64-linux-gnu/libc-2.23.so]
+          150  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:_fxstat [/lib/x86_64-linux-gnu/libc-2.23.so]
+          150  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:__write_nocancel [/lib/x86_64-linux-gnu/libc-2.23.so]
+          149  /build/glibc-t3gR2i/glibc-2.23/elf/dl-misc.c:_dl_higher_prime_number [/lib/x86_64-linux-gnu/ld-2.23.so]
+          139  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_allocate_tls_init [/lib/x86_64-linux-gnu/ld-2.23.so]
+          135  /build/glibc-t3gR2i/glibc-2.23/elf/./dl-load.h:_dl_map_object_from_fd
+          132  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_atexit.c:__cxa_atexit [/lib/x86_64-linux-gnu/libc-2.23.so]
+          127  ???:0x0000000000002a70 [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+          123  /build/glibc-t3gR2i/glibc-2.23/elf/dl-init.c:_dl_init [/lib/x86_64-linux-gnu/ld-2.23.so]
+          121  /build/glibc-t3gR2i/glibc-2.23/elf/do-rel.h:_dl_start
+          120  /build/glibc-t3gR2i/glibc-2.23/debug/sprintf_chk.c:__sprintf_chk [/lib/x86_64-linux-gnu/libc-2.23.so]
+          117  /build/glibc-t3gR2i/glibc-2.23/elf/dl-version.c:_dl_check_all_versions [/lib/x86_64-linux-gnu/ld-2.23.so]
+          116  /usr/include/x86_64-linux-gnu/bits/stdio2.h:main
+          116  /build/glibc-t3gR2i/glibc-2.23/stdlib/exit.c:__run_exit_handlers [/lib/x86_64-linux-gnu/libc-2.23.so]
+          109  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:open [/lib/x86_64-linux-gnu/libc-2.23.so]
+          108  /build/glibc-t3gR2i/glibc-2.23/string/strdup.c:strdup [/lib/x86_64-linux-gnu/ld-2.23.so]
+          106  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86/cpu-features.c:_dl_sysdep_start
+          105  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+          105  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_xsgetn [/lib/x86_64-linux-gnu/libc-2.23.so]
+          104  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_init@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+          104  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_determine_tlsoffset [/lib/x86_64-linux-gnu/ld-2.23.so]
+           98  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/cacheinfo.c:handle_intel [/lib/x86_64-linux-gnu/libc-2.23.so]
+           93  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:init_tls [/lib/x86_64-linux-gnu/ld-2.23.so]
+           92  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_cleanup [/lib/x86_64-linux-gnu/libc-2.23.so]
+           92  ???:operator delete(void*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           91  /build/glibc-t3gR2i/glibc-2.23/stdlib/msort.c:qsort_r [/lib/x86_64-linux-gnu/libc-2.23.so]
+           90  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_flush_all_lockp [/lib/x86_64-linux-gnu/libc-2.23.so]
+           88  ???:__cpu_indicator_init [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+           88  /build/glibc-t3gR2i/glibc-2.23/debug/../libio/libioP.h:__printf_chk
+           88  /build/glibc-t3gR2i/glibc-2.23/libio/libioP.h:fclose@@GLIBC_2.2.5
+           87  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_underflow@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           84  /build/glibc-t3gR2i/glibc-2.23/debug/../libio/libioP.h:__fprintf_chk
+           82  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:_dl_start [/lib/x86_64-linux-gnu/ld-2.23.so]
+           80  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_discover_osversion [/lib/x86_64-linux-gnu/ld-2.23.so]
+           80  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/generic/dl-hash.h:gettimeofday
+           77  /build/glibc-t3gR2i/glibc-2.23/misc/sbrk.c:sbrk [/lib/x86_64-linux-gnu/libc-2.23.so]
+           77  /build/glibc-t3gR2i/glibc-2.23/libio/libioP.h:fwrite
+           73  ???:0x0000000000089f40 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           71  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/getsysstats.c:get_phys_pages [/lib/x86_64-linux-gnu/libc-2.23.so]
+           70  image_template.h:read_image(char*, unsigned char**, int*, int*) [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+           65  /build/glibc-t3gR2i/glibc-2.23/elf/dl-debug.c:_dl_debug_initialize [/lib/x86_64-linux-gnu/ld-2.23.so]
+           64  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_finish@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           60  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:write [/lib/x86_64-linux-gnu/libc-2.23.so]
+           60  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/memchr.S:memchr [/lib/x86_64-linux-gnu/libc-2.23.so]
+           60  /usr/include/x86_64-linux-gnu/bits/stdio2.h:void write_image_template<float>(char*, float*, int, int)
+           58  /build/glibc-t3gR2i/glibc-2.23/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.23.so]
+           56  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:systrim.isra.2 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           56  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_unsave_markers [/lib/x86_64-linux-gnu/libc-2.23.so]
+           55  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/syscall-template.S:mprotect [/lib/x86_64-linux-gnu/ld-2.23.so]
+           55  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/syscall-template.S:munmap [/lib/x86_64-linux-gnu/libc-2.23.so]
+           54  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:access [/lib/x86_64-linux-gnu/ld-2.23.so]
+           54  ???:0x000000000008a050 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           53  /build/glibc-t3gR2i/glibc-2.23/elf/dl-open.c:_dl_find_dso_for_object [/lib/x86_64-linux-gnu/ld-2.23.so]
+           49  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:_xstat [/lib/x86_64-linux-gnu/ld-2.23.so]
+           49  ???:0x000000000008a480 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           49  ???:0x000000000008a3c0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           48  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_close [/lib/x86_64-linux-gnu/libc-2.23.so]
+           42  /build/glibc-t3gR2i/glibc-2.23/libio/iofread.c:fread [/lib/x86_64-linux-gnu/libc-2.23.so]
+           41  /build/glibc-t3gR2i/glibc-2.23/elf/dl-misc.c:_dl_sysdep_read_whole_file [/lib/x86_64-linux-gnu/ld-2.23.so]
+           40  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/generic/dl-hash.h:time
+           40  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:gettimeofday [/lib/x86_64-linux-gnu/libc-2.23.so]
+           40  /build/glibc-t3gR2i/glibc-2.23/csu/../sysdeps/generic/dl-hash.h:_init
+           40  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall [/lib/x86_64-linux-gnu/libc-2.23.so]
+           40  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_add_to_slotinfo [/lib/x86_64-linux-gnu/ld-2.23.so]
+           40  /build/glibc-t3gR2i/glibc-2.23/nptl/unregister-atfork.c:__unregister_atfork [/lib/x86_64-linux-gnu/libc-2.23.so]
+           40  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:__open_nocancel [/lib/x86_64-linux-gnu/libc-2.23.so]
+           40  ???:0x0000000000002c60 [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+           40  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_switch_to_get_mode [/lib/x86_64-linux-gnu/libc-2.23.so]
+           38  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc_hook_ini
+           38  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_default_setbuf [/lib/x86_64-linux-gnu/libc-2.23.so]
+           36  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_stat [/lib/x86_64-linux-gnu/libc-2.23.so]
+           36  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c:brk [/lib/x86_64-linux-gnu/libc-2.23.so]
+           34  ???:0x0000000000089e10 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           34  ???:__libc_csu_init [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+           33  ???:__cxa_guard_acquire [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           33  ???:0x000000000008a2c0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           33  ???:0x000000000008a340 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           32  /build/glibc-t3gR2i/glibc-2.23/csu/../csu/init-first.c:_init [/lib/x86_64-linux-gnu/libc-2.23.so]
+           32  /build/glibc-t3gR2i/glibc-2.23/libio/iofopen.c:__fopen_maybe_mmap [/lib/x86_64-linux-gnu/libc-2.23.so]
+           32  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-machine.h:_dl_fixup
+           31  /usr/include/x86_64-linux-gnu/bits/stdio2.h:read_image(char*, unsigned char**, int*, int*)
+           31  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:read [/lib/x86_64-linux-gnu/libc-2.23.so]
+           30  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-vdso.c:_dl_vdso_vsym [/lib/x86_64-linux-gnu/libc-2.23.so]
+           30  /build/glibc-t3gR2i/glibc-2.23/libio/libioP.h:fgets
+           30  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:close [/lib/x86_64-linux-gnu/ld-2.23.so]
+           28  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:_dl_initial_error_catch_tsd [/lib/x86_64-linux-gnu/ld-2.23.so]
+           28  /build/glibc-t3gR2i/glibc-2.23/elf/dl-error.c:_dl_receive_error [/lib/x86_64-linux-gnu/ld-2.23.so]
+           28  /build/glibc-t3gR2i/glibc-2.23/csu/../sysdeps/unix/sysv/linux/x86_64/init-first.c:_init
+           28  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:do_preload [/lib/x86_64-linux-gnu/ld-2.23.so]
+           27  ???:std::future_category() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           26  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:__uflow [/lib/x86_64-linux-gnu/libc-2.23.so]
+           26  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:__underflow [/lib/x86_64-linux-gnu/libc-2.23.so]
+           24  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strrchr.S:rindex [/lib/x86_64-linux-gnu/libc-2.23.so]
+           24  /build/glibc-t3gR2i/glibc-2.23/misc/init-misc.c:__init_misc [/lib/x86_64-linux-gnu/libc-2.23.so]
+           22  /usr/include/x86_64-linux-gnu/bits/string3.h:main
+           22  ???:memcpy@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           22  ???:0x0000000000089eb0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           22  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/x86/sysconf.c:sysconf [/lib/x86_64-linux-gnu/libc-2.23.so]
+           21  /build/glibc-t3gR2i/glibc-2.23/malloc/morecore.c:__default_morecore [/lib/x86_64-linux-gnu/libc-2.23.so]
+           20  /build/glibc-t3gR2i/glibc-2.23/stdlib/../stdlib/strtol.c:strtol [/lib/x86_64-linux-gnu/libc-2.23.so]
+           20  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/time.c:time [/lib/x86_64-linux-gnu/libc-2.23.so]
+           19  ???:0x0000000000000cc0 [/lib/x86_64-linux-gnu/ld-2.23.so]
+           19  /usr/include/stdlib.h:main
+           18  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c:free [/lib/x86_64-linux-gnu/ld-2.23.so]
+           18  ???:0x00000000054ea8a0 [???]
+           17  ???:0x0000000000003140 [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+           17  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/posix/sysconf.c:sysconf
+           17  ???:0x00000000054ea8a8 [???]
+           17  ???:0x000000000008a610 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           17  /build/glibc-t3gR2i/glibc-2.23/elf/../misc/sbrk.c:sbrk [/lib/x86_64-linux-gnu/ld-2.23.so]
+           17  ???:0x0000000000000650 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+           17  ???:0x00000000000056d0 [/lib/x86_64-linux-gnu/libm-2.23.so]
+           16  ???:0x0000000000401dd0 [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+           16  ???:_start [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+           16  /build/glibc-t3gR2i/glibc-2.23/ctype/ctype-info.c:__ctype_init [/lib/x86_64-linux-gnu/libc-2.23.so]
+           16  /build/glibc-t3gR2i/glibc-2.23/libio/iofopen.c:fopen@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           16  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_next_tls_modid [/lib/x86_64-linux-gnu/ld-2.23.so]
+           15  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S:__read_nocancel [/lib/x86_64-linux-gnu/libc-2.23.so]
+           15  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_setbuf@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           14  ???:__cxa_guard_release [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           14  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:map_doit [/lib/x86_64-linux-gnu/ld-2.23.so]
+           14  /usr/include/stdlib.h:read_image(char*, unsigned char**, int*, int*)
+           13  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/x86/../sysconf.c:sysconf
+           13  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_sync@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.23.so]
+           12  ???:0x000000000008a5d0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           12  /usr/include/x86_64-linux-gnu/bits/string3.h:double_thresh(float*, float*, int, int)
+           12  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_default_uflow [/lib/x86_64-linux-gnu/libc-2.23.so]
+           12  ???:0x0000000000005690 [/lib/x86_64-linux-gnu/libm-2.23.so]
+           12  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c:_IO_file_read [/lib/x86_64-linux-gnu/libc-2.23.so]
+           12  ???:0x0000000000003100 [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+           12  ???:0x0000000000000610 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+           12  ???:0x000000000008a280 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           11  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/x86_64/brk.c:brk [/lib/x86_64-linux-gnu/ld-2.23.so]
+           11  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_thread_atexit_impl.c:__call_tls_dtors [/lib/x86_64-linux-gnu/libc-2.23.so]
+           11  ???:0x0000000000089e90 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+           10  /build/glibc-t3gR2i/glibc-2.23/elf/dl-cache.c:_dl_unload_cache [/lib/x86_64-linux-gnu/ld-2.23.so]
+           10  /build/glibc-t3gR2i/glibc-2.23/malloc/hooks.c:malloc_hook_ini [/lib/x86_64-linux-gnu/libc-2.23.so]
+           10  /build/glibc-t3gR2i/glibc-2.23/libio/libioP.h:fread
+           10  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c:version_check_doit [/lib/x86_64-linux-gnu/ld-2.23.so]
+           10  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/getpagesize.c:getpagesize [/lib/x86_64-linux-gnu/libc-2.23.so]
+            9  ???:0x0000000000000580 [/usr/lib/valgrind/vgpreload_core-amd64-linux.so]
+            9  ???:0x0000000000003070 [/lib/x86_64-linux-gnu/libgcc_s.so.1]
+            9  ???:0x0000000000005600 [/lib/x86_64-linux-gnu/libm-2.23.so]
+            9  ???:0x000000000008a540 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            9  /build/glibc-t3gR2i/glibc-2.23/setjmp/sigjmp.c:__sigjmp_save [/lib/x86_64-linux-gnu/libc-2.23.so]
+            8  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memset.S:memset [/lib/x86_64-linux-gnu/libc-2.23.so]
+            8  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-irel.h:_dl_fixup
+            8  ???:0x00000000000b8880 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            8  ???:0x000000000008b4a0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            8  ???:sin [/lib/x86_64-linux-gnu/libm-2.23.so]
+            8  ???:std::error_category::error_category() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            8  ???:__atan2_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            8  ???:0x0000000000401db0 [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+            8  ???:0x0000000000401d30 [/home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify]
+            8  ???:__log_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            8  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c:cos [/lib/x86_64-linux-gnu/libm-2.23.so]
+            8  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_exp.c:__exp_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            7  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy.S:memcpy@@GLIBC_2.14 [/lib/x86_64-linux-gnu/libc-2.23.so]
+            6  ???:0x0000000004a28530 [???]
+            6  ???:0x0000000000400ba0 [???]
+            6  ???:0x00000000052b7790 [???]
+            6  ???:0x0000000004fb1428 [???]
+            6  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strspn.S:strspn [/lib/x86_64-linux-gnu/libc-2.23.so]
+            6  /build/glibc-t3gR2i/glibc-2.23/malloc/arena.c:sysmalloc
+            6  /build/glibc-t3gR2i/glibc-2.23/libio/iogetline.c:_IO_getline [/lib/x86_64-linux-gnu/libc-2.23.so]
+            6  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcspn.S:strpbrk [/lib/x86_64-linux-gnu/libc-2.23.so]
+            6  ???:0x0000000004cb0a00 [???]
+            6  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcspn.S:strcspn [/lib/x86_64-linux-gnu/libc-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c:__asin_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_rint.S:rint [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcmp.S:strncasecmp [/lib/x86_64-linux-gnu/libc-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/syscall-template.S:sysinfo [/lib/x86_64-linux-gnu/libc-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_ceil.S:ceil [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /usr/include/x86_64-linux-gnu/bits/string3.h:edge_linking(float*, float*, int, int)
+            5  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/syscall-template.S:uname [/lib/x86_64-linux-gnu/ld-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_floorf.S:floorf [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_ceilf.S:ceilf [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_pow.c:__pow_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c:__acos_finite [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/_exit.c:_Exit [/lib/x86_64-linux-gnu/libc-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-machine.h:_dl_sysdep_start
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_rintf.S:rintf [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_floor.S:floor [/lib/x86_64-linux-gnu/libm-2.23.so]
+            5  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcmp.S:strcasecmp [/lib/x86_64-linux-gnu/libc-2.23.so]
+            4  /build/glibc-t3gR2i/glibc-2.23/stdlib/exit.c:exit [/lib/x86_64-linux-gnu/libc-2.23.so]
+            4  ???:0x00000000000b88b0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            4  /build/glibc-t3gR2i/glibc-2.23/elf/dl-altinit.c:dlinit_alt [/lib/x86_64-linux-gnu/libc-2.23.so]
+            4  ???:0x000000000008b4d0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            4  ???:0x00000000000b6ac0 [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            4  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c:_dl_count_modids [/lib/x86_64-linux-gnu/ld-2.23.so]
+            3  ???:0x0000000004d5fccc [???]
+            3  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c:_IO_sgetn [/lib/x86_64-linux-gnu/libc-2.23.so]
+            3  ???:0x0000000004a287b8 [???]
+            3  ???:std::_V2::error_category::~error_category() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            3  ???:0x00000000052c78b8 [???]
+            3  ???:0x0000000005022d0c [???]
+            3  ???:0x00000000004063c4 [???]
+            3  /build/glibc-t3gR2i/glibc-2.23/malloc/arena.c:malloc_hook_ini
+            2  /build/glibc-t3gR2i/glibc-2.23/elf/dl-debug.c:_dl_debug_state [/lib/x86_64-linux-gnu/ld-2.23.so]
+            2  /build/glibc-t3gR2i/glibc-2.23/stdlib/msort.c:qsort [/lib/x86_64-linux-gnu/libc-2.23.so]
+            2  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_start
+            2  /build/glibc-t3gR2i/glibc-2.23/elf/setup-vdso.h:dl_main
+            2  /build/glibc-t3gR2i/glibc-2.23/setjmp/../sysdeps/x86_64/bsd-_setjmp.S:_setjmp [/lib/x86_64-linux-gnu/libc-2.23.so]
+            2  ???:std::error_category::~error_category() [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21]
+            1  ???:0x0000000004fb15f8 [???]
+            1  ???:0x0000000004a28570 [???]
+            1  /build/glibc-t3gR2i/glibc-2.23/elf/../elf/dl-sysdep.c:_dl_sysdep_start_cleanup [/lib/x86_64-linux-gnu/ld-2.23.so]
+            1  ???:0x0000000004cb3ca8 [???]
+            1  ???:0x0000000004000ab0 [???]
+            1  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h:dl_main
+            1  ???:0x00000000052b7a68 [???]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: image_template.h
+--------------------------------------------------------------------------------
+        Ir 
+
+-- line 28 ----------------------------------------
+         .  
+         .  template <class T>
+         .  void read_image_template(char *name, T **image, int *im_width, int *im_height)
+         .  {
+         .          unsigned char *temp_img;
+         .  
+         .  	int i;
+         .  
+         5          read_image(name, &temp_img, im_width, im_height);
+    14,040  => image_template.h:read_image(char*, unsigned char**, int*, int*) (1x)
+         .  
+         7          *image=(T *)malloc(sizeof(int)*(*im_width)*(*im_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  
+         .  
+        37          for(i=0;i<(*im_width)*(*im_height);i++)
+         .          {
+ 1,703,945                  (*image)[i]=(T)temp_img[i];
+         .          }
+         6          free(temp_img);
+     1,571  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+         .  }
+         .  
+         .  void read_image(char *name, unsigned char **image, int *im_width, int *im_height)
+        13  {
+         .  	FILE *fip;
+         .  	char buf[BUFFER];
+         .  	char *parse;
+         .  	int im_size;
+         .  	
+         7  	fip=fopen(name,"rb");
+     1,921  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+         2  	if(fip==NULL)
+         .  	{
+         .  		fprintf(stderr,"ERROR:Cannot open %s\n",name);
+         .  		exit(0);
+         .  	}
+         .  	fgets(buf,BUFFER,fip);
+         .  	do
+         .  	{
+         .  		fgets(buf,BUFFER,fip);
+         .  	}
+         2  	while(buf[0]=='#');
+         8  	parse=strtok(buf," ");
+     1,564  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+         1  	(*im_width)=atoi(parse);
+         .  
+         4  	parse=strtok(NULL,"\n");
+        85  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strtok.S:strtok (1x)
+         1  	(*im_height)=atoi(parse);
+         .  
+         .  	fgets(buf,BUFFER,fip);
+         4  	parse=strtok(buf," ");
+        85  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strtok.S:strtok (1x)
+         .  	
+         .  	im_size=(*im_width)*(*im_height);
+        11  	(*image)=(unsigned char *)malloc(sizeof(unsigned char)*im_size);
+     1,753  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+         .  	fread(*image,1,im_size,fip);
+         .  	
+         7  	fclose(fip);
+     2,050  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+        10  }
+         .  
+         .  /* Call this function alone to write an image*/
+         .  template <class T>
+        91  void write_image_template(char *name, T *image, int im_width, int im_height)
+         .  {
+         .  	int i;
+        28          unsigned char *temp_img=(unsigned char*)malloc(sizeof(unsigned char)*im_width*im_height);
+     1,524  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (7x)
+       217          for(i=0;i<(im_width*im_height);i++)
+         .          {
+28,311,573                  temp_img[i]=(unsigned char)image[i];
+         .          }
+         .          write_image(name,temp_img,im_width,im_height);
+         .  
+        35          free(temp_img);
+       896  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (7x)
+        49  }
+         .  
+         .  template <class T>
+         .  void write_img_template(char *name, T *image,int im_width,int im_height)
+         .  {
+         .  
+         .  int i,j;
+         .  FILE *fop;
+         .  int im_size=im_width*im_height;
+-- line 104 ----------------------------------------
+-- line 117 ----------------------------------------
+         .  //fclose(fop);
+         .  } 
+         .  
+         .  void write_image(char *name, unsigned char *image, int im_width, int im_height)
+         .  {
+         .  	FILE *fop; 
+         .  	int im_size=im_width*im_height;
+         .  	
+        35  	fop=fopen(name,"w+");
+     3,584  => /build/glibc-t3gR2i/glibc-2.23/libio/iofopen.c:fopen@@GLIBC_2.2.5 (7x)
+         .  	fprintf(fop,"P5\n%d %d\n255\n",im_width,im_height);
+        46  	fwrite(image,sizeof(unsigned char),im_size,fop);
+     2,459  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+     6,054  => /build/glibc-t3gR2i/glibc-2.23/libio/iofwrite.c:fwrite (6x)
+         .  	
+        21  	fclose(fop);
+     4,466  => /build/glibc-t3gR2i/glibc-2.23/libio/iofclose.c:fclose@@GLIBC_2.2.5 (7x)
+         .  }
+         .  
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/stdlib.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 272 ----------------------------------------
+ .  #endif /* GNU */
+ .  
+ .  
+ .  #ifdef __USE_EXTERN_INLINES
+ .  __BEGIN_NAMESPACE_STD
+ .  __extern_inline int
+ .  __NTH (atoi (const char *__nptr))
+ .  {
+33    return (int) strtol (__nptr, (char **) NULL, 10);
+172  => /build/glibc-t3gR2i/glibc-2.23/stdlib/../stdlib/strtol.c:strtol (1x)
+1,638  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+ .  }
+ .  __extern_inline long int
+ .  __NTH (atol (const char *__nptr))
+ .  {
+ .    return strtol (__nptr, (char **) NULL, 10);
+ .  }
+ .  __END_NAMESPACE_STD
+ .  
+-- line 288 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/5/ext/new_allocator.h
+--------------------------------------------------------------------------------
+       Ir 
+
+-- line 96 ----------------------------------------
+        .        // NB: __n is permitted to be 0.  The C++ standard says nothing
+        .        // about what the return value is when __n == 0.
+        .        pointer
+        .        allocate(size_type __n, const void* = 0)
+        .        { 
+        .  	if (__n > this->max_size())
+        .  	  std::__throw_bad_alloc();
+        .  
+      576  	return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
+    1,089  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+   10,446  => ???:operator new(unsigned long) (43x)
+        .        }
+        .  
+        .        // __p is not permitted to be a null pointer.
+        .        void
+        .        deallocate(pointer __p, size_type)
+      132        { ::operator delete(__p); }
+      276  => ???:operator delete(void*) (2x)
+        .  
+        .        size_type
+        .        max_size() const _GLIBCXX_USE_NOEXCEPT
+        .        { return size_t(-1) / sizeof(_Tp); }
+        .  
+        .  #if __cplusplus >= 201103L
+        .        template<typename _Up, typename... _Args>
+        .          void
+-- line 118 ----------------------------------------
+-- line 122 ----------------------------------------
+        .        template<typename _Up>
+        .          void 
+        .          destroy(_Up* __p) { __p->~_Up(); }
+        .  #else
+        .        // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .        // 402. wrong new expression in [some_] allocator::construct
+        .        void 
+        .        construct(pointer __p, const _Tp& __val) 
+1,609,714        { ::new((void *)__p) _Tp(__val); }
+        .  
+        .        void 
+        .        destroy(pointer __p) { __p->~_Tp(); }
+        .  #endif
+        .      };
+        .  
+        .    template<typename _Tp>
+        .      inline bool
+-- line 138 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/5/bits/stl_algobase.h
+--------------------------------------------------------------------------------
+ Ir 
+
+-- line 216 ----------------------------------------
+  .    template<typename _Tp>
+  .      _GLIBCXX14_CONSTEXPR
+  .      inline const _Tp&
+  .      max(const _Tp& __a, const _Tp& __b)
+  .      {
+  .        // concept requirements
+  .        __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+  .        //return  __a < __b ? __b : __a;
+ 88        if (__a < __b)
+  .  	return __b;
+  .        return __a;
+  .      }
+  .  
+  .    /**
+  .     *  @brief This does what you think it does.
+  .     *  @ingroup sorting_algorithms
+  .     *  @param  __a  A thing of arbitrary type.
+-- line 232 ----------------------------------------
+-- line 374 ----------------------------------------
+  .          {
+  .  #if __cplusplus >= 201103L
+  .  	  using __assignable = conditional<_IsMove,
+  .  					   is_move_assignable<_Tp>,
+  .  					   is_copy_assignable<_Tp>>;
+  .  	  // trivial types can have deleted assignment
+  .  	  static_assert( __assignable::type::value, "type is not assignable" );
+  .  #endif
+ 44  	  const ptrdiff_t _Num = __last - __first;
+352  	  if (_Num)
+324  	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+1,454  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+9,818  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S:__memmove_avx_unaligned (39x)
+ 44  	  return __result + _Num;
+  .  	}
+  .      };
+  .  
+  .    template<bool _IsMove, typename _II, typename _OI>
+  .      inline _OI
+  .      __copy_move_a(_II __first, _II __last, _OI __result)
+  .      {
+  .        typedef typename iterator_traits<_II>::value_type _ValueTypeI;
+-- line 393 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/5/bits/vector.tcc
+--------------------------------------------------------------------------------
+     Ir 
+
+-- line 148 ----------------------------------------
+      .        return __position;
+      .      }
+      .  
+      .    template<typename _Tp, typename _Alloc>
+      .      typename vector<_Tp, _Alloc>::iterator
+      .      vector<_Tp, _Alloc>::
+      .      _M_erase(iterator __first, iterator __last)
+      .      {
+548,504        if (__first != __last)
+      .  	{
+      .  	  if (__last != end())
+      .  	    _GLIBCXX_MOVE3(__last, end(), __first);
+      .  	  _M_erase_at_end(__first.base() + (end() - __last));
+      .  	}
+      .        return __first;
+      .      }
+      .  
+-- line 164 ----------------------------------------
+-- line 318 ----------------------------------------
+      .    template<typename _Tp, typename _Alloc>
+      .      template<typename... _Args>
+      .        void
+      .        vector<_Tp, _Alloc>::
+      .        _M_insert_aux(iterator __position, _Args&&... __args)
+      .  #else
+      .    template<typename _Tp, typename _Alloc>
+      .      void
+    396      vector<_Tp, _Alloc>::
+      .      _M_insert_aux(iterator __position, const _Tp& __x)
+      .  #endif
+      .      {
+    132        if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+      .  	{
+      .  	  _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+      .  			           _GLIBCXX_MOVE(*(this->_M_impl._M_finish
+      .  				                   - 1)));
+      .  	  ++this->_M_impl._M_finish;
+      .  #if __cplusplus < 201103L
+      .  	  _Tp __x_copy = __x;
+      .  #endif
+-- line 338 ----------------------------------------
+-- line 367 ----------------------------------------
+      .  #endif
+      .  	      __new_finish = pointer();
+      .  
+      .  	      __new_finish
+      .  		= std::__uninitialized_move_if_noexcept_a
+      .  		(this->_M_impl._M_start, __position.base(),
+      .  		 __new_start, _M_get_Tp_allocator());
+      .  
+     44  	      ++__new_finish;
+      .  
+      .  	      __new_finish
+      .  		= std::__uninitialized_move_if_noexcept_a
+      .  		(__position.base(), this->_M_impl._M_finish,
+      .  		 __new_finish, _M_get_Tp_allocator());
+      .  	    }
+      .            __catch(...)
+      .  	    {
+-- line 383 ----------------------------------------
+-- line 389 ----------------------------------------
+      .  	      _M_deallocate(__new_start, __len);
+      .  	      __throw_exception_again;
+      .  	    }
+      .  	  std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+      .  			_M_get_Tp_allocator());
+      .  	  _M_deallocate(this->_M_impl._M_start,
+      .  			this->_M_impl._M_end_of_storage
+      .  			- this->_M_impl._M_start);
+     44  	  this->_M_impl._M_start = __new_start;
+     44  	  this->_M_impl._M_finish = __new_finish;
+     44  	  this->_M_impl._M_end_of_storage = __new_start + __len;
+      .  	}
+    440      }
+      .  
+      .  #if __cplusplus >= 201103L
+      .    template<typename _Tp, typename _Alloc>
+      .      template<typename... _Args>
+      .        void
+      .        vector<_Tp, _Alloc>::
+      .        _M_emplace_back_aux(_Args&&... __args)
+      .        {
+-- line 409 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/5/bits/stl_vector.h
+--------------------------------------------------------------------------------
+       Ir 
+
+-- line 79 ----------------------------------------
+        .        struct _Vector_impl 
+        .        : public _Tp_alloc_type
+        .        {
+        .  	pointer _M_start;
+        .  	pointer _M_finish;
+        .  	pointer _M_end_of_storage;
+        .  
+        .  	_Vector_impl()
+       12  	: _Tp_alloc_type(), _M_start(), _M_finish(), _M_end_of_storage()
+        .  	{ }
+        .  
+        .  	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+        .  	: _Tp_alloc_type(__a), _M_start(), _M_finish(), _M_end_of_storage()
+        .  	{ }
+        .  
+        .  #if __cplusplus >= 201103L
+        .  	_Vector_impl(_Tp_alloc_type&& __a) noexcept
+-- line 95 ----------------------------------------
+-- line 153 ----------------------------------------
+        .  	    size_t __n = __x._M_impl._M_finish - __x._M_impl._M_start;
+        .  	    _M_create_storage(__n);
+        .  	  }
+        .        }
+        .  #endif
+        .  
+        .        ~_Vector_base() _GLIBCXX_NOEXCEPT
+        .        { _M_deallocate(this->_M_impl._M_start, this->_M_impl._M_end_of_storage
+        2  		      - this->_M_impl._M_start); }
+        .  
+        .      public:
+        .        _Vector_impl _M_impl;
+        .  
+        .        pointer
+        .        _M_allocate(size_t __n)
+        .        {
+        .  	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+       80  	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+        .        }
+        .  
+        .        void
+        .        _M_deallocate(pointer __p, size_t __n)
+        .        {
+        .  	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+       96  	if (__p)
+        .  	  _Tr::deallocate(_M_impl, __p, __n);
+        .        }
+        .  
+        .      private:
+        .        void
+        .        _M_create_storage(size_t __n)
+        .        {
+        .  	this->_M_impl._M_start = this->_M_allocate(__n);
+-- line 185 ----------------------------------------
+-- line 647 ----------------------------------------
+        .        crend() const noexcept
+        .        { return const_reverse_iterator(begin()); }
+        .  #endif
+        .  
+        .        // [23.2.4.2] capacity
+        .        /**  Returns the number of elements in the %vector.  */
+        .        size_type
+        .        size() const _GLIBCXX_NOEXCEPT
+  827,733        { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+        .  
+        .        /**  Returns the size() of the largest possible %vector.  */
+        .        size_type
+        .        max_size() const _GLIBCXX_NOEXCEPT
+        .        { return _Alloc_traits::max_size(_M_get_Tp_allocator()); }
+        .  
+        .  #if __cplusplus >= 201103L
+        .        /**
+-- line 663 ----------------------------------------
+-- line 907 ----------------------------------------
+        .         *  element at the end of the %vector and assigns the given data
+        .         *  to it.  Due to the nature of a %vector this operation can be
+        .         *  done in constant time if the %vector has preallocated space
+        .         *  available.
+        .         */
+        .        void
+        .        push_back(const value_type& __x)
+        .        {
+1,379,736  	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+        .  	  {
+        .  	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+        .  	                             __x);
+  919,736  	    ++this->_M_impl._M_finish;
+        .  	  }
+        .  	else
+        .  #if __cplusplus >= 201103L
+        .  	  _M_emplace_back_aux(__x);
+        .  #else
+      176  	  _M_insert_aux(end(), __x);
+   14,818  => /usr/include/c++/5/bits/vector.tcc:std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (22x)
+        .  #endif
+        .        }
+        .  
+        .  #if __cplusplus >= 201103L
+        .        void
+        .        push_back(value_type&& __x)
+        .        { emplace_back(std::move(__x)); }
+        .  
+-- line 933 ----------------------------------------
+-- line 1419 ----------------------------------------
+        .  
+        .        // Called by the latter.
+        .        size_type
+        .        _M_check_len(size_type __n, const char* __s) const
+        .        {
+        .  	if (max_size() - size() < __n)
+        .  	  __throw_length_error(__N(__s));
+        .  
+       44  	const size_type __len = size() + std::max(size(), __n);
+      200  	return (__len < size() || __len > max_size()) ? max_size() : __len;
+        .        }
+        .  
+        .        // Internal erase functions follow.
+        .  
+        .        // Called by erase(q1,q2), clear(), resize(), _M_fill_assign,
+        .        // _M_assign_aux.
+        .        void
+        .        _M_erase_at_end(pointer __pos) _GLIBCXX_NOEXCEPT
+        .        {
+        .  	std::_Destroy(__pos, this->_M_impl._M_finish, _M_get_Tp_allocator());
+  495,604  	this->_M_impl._M_finish = __pos;
+        .        }
+        .  
+        .        iterator
+        .        _M_erase(iterator __position);
+        .  
+        .        iterator
+        .        _M_erase(iterator __first, iterator __last);
+        .  
+-- line 1447 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/x86_64-linux-gnu/bits/string3.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 45 ----------------------------------------
+ .  # endif
+ .  #endif
+ .  
+ .  
+ .  __fortify_function void *
+ .  __NTH (memcpy (void *__restrict __dest, const void *__restrict __src,
+ .  	       size_t __len))
+ .  {
+39    return __builtin___memcpy_chk (__dest, __src, __len, __bos0 (__dest));
+460,300  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+1,835,034  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S:__memcpy_avx_unaligned (1x)
+ .  }
+ .  
+ .  __fortify_function void *
+ .  __NTH (memmove (void *__dest, const void *__src, size_t __len))
+ .  {
+ .    return __builtin___memmove_chk (__dest, __src, __len, __bos0 (__dest));
+ .  }
+ .  
+-- line 61 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/x86_64-linux-gnu/bits/stdio2.h
+--------------------------------------------------------------------------------
+Ir 
+
+-- line 26 ----------------------------------------
+ .  			   const char *__restrict __format,
+ .  			   _G_va_list __ap) __THROW;
+ .  
+ .  #ifdef __va_arg_pack
+ .  __fortify_function int
+ .  __NTH (sprintf (char *__restrict __s, const char *__restrict __fmt, ...))
+ .  {
+ .    return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+69  				  __bos (__s), __fmt, __va_arg_pack ());
+2,291  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+5,248  => /build/glibc-t3gR2i/glibc-2.23/debug/sprintf_chk.c:__sprintf_chk (7x)
+ .  }
+ .  #elif !defined __cplusplus
+ .  # define sprintf(str, ...) \
+ .    __builtin___sprintf_chk (str, __USE_FORTIFY_LEVEL - 1, __bos (str), \
+ .  			   __VA_ARGS__)
+ .  #endif
+ .  
+ .  __fortify_function int
+-- line 42 ----------------------------------------
+-- line 90 ----------------------------------------
+ .  extern int __vprintf_chk (int __flag, const char *__restrict __format,
+ .  			  _G_va_list __ap);
+ .  
+ .  # ifdef __va_arg_pack
+ .  __fortify_function int
+ .  fprintf (FILE *__restrict __stream, const char *__restrict __fmt, ...)
+ .  {
+ .    return __fprintf_chk (__stream, __USE_FORTIFY_LEVEL - 1, __fmt,
+60  			__va_arg_pack ());
+2,930  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+8,694  => /build/glibc-t3gR2i/glibc-2.23/debug/fprintf_chk.c:__fprintf_chk (6x)
+ .  }
+ .  
+ .  __fortify_function int
+ .  printf (const char *__restrict __fmt, ...)
+ .  {
+47    return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+17,760  => /build/glibc-t3gR2i/glibc-2.23/debug/printf_chk.c:__printf_chk (7x)
+4,241  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+ .  }
+ .  # elif !defined __cplusplus
+ .  #  define printf(...) \
+ .    __printf_chk (__USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+ .  #  define fprintf(stream, ...) \
+ .    __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+ .  # endif
+ .  
+-- line 112 ----------------------------------------
+-- line 255 ----------------------------------------
+ .    if (__bos (__s) != (size_t) -1)
+ .      {
+ .        if (!__builtin_constant_p (__n) || __n <= 0)
+ .  	return __fgets_chk (__s, __bos (__s), __n, __stream);
+ .  
+ .        if ((size_t) __n > __bos (__s))
+ .  	return __fgets_chk_warn (__s, __bos (__s), __n, __stream);
+ .      }
+21    return __fgets_alias (__s, __n, __stream);
+333  => /build/glibc-t3gR2i/glibc-2.23/libio/iofgets.c:fgets (2x)
+2,006  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+ .  }
+ .  
+ .  extern size_t __fread_chk (void *__restrict __ptr, size_t __ptrlen,
+ .  			   size_t __size, size_t __n,
+ .  			   FILE *__restrict __stream) __wur;
+ .  extern size_t __REDIRECT (__fread_alias,
+ .  			  (void *__restrict __ptr, size_t __size,
+ .  			   size_t __n, FILE *__restrict __stream),
+-- line 271 ----------------------------------------
+-- line 287 ----------------------------------------
+ .        if (!__builtin_constant_p (__size)
+ .  	  || !__builtin_constant_p (__n)
+ .  	  || (__size | __n) >= (((size_t) 1) << (8 * sizeof (size_t) / 2)))
+ .  	return __fread_chk (__ptr, __bos0 (__ptr), __size, __n, __stream);
+ .  
+ .        if (__size * __n > __bos0 (__ptr))
+ .  	return __fread_chk_warn (__ptr, __bos0 (__ptr), __size, __n, __stream);
+ .      }
+10    return __fread_alias (__ptr, __size, __n, __stream);
+2,318  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+ .  }
+ .  
+ .  #ifdef __USE_GNU
+ .  extern char *__fgets_unlocked_chk (char *__restrict __s, size_t __size,
+ .  				   int __n, FILE *__restrict __stream) __wur;
+ .  extern char *__REDIRECT (__fgets_unlocked_alias,
+ .  			 (char *__restrict __s, int __n,
+ .  			  FILE *__restrict __stream), fgets_unlocked) __wur;
+-- line 303 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: amplify.h
+--------------------------------------------------------------------------------
+        Ir 
+
+-- line 12 ----------------------------------------
+         .          {
+         .                  printf("\n");
+         .                  for(j=0;j<width;j++)
+         .                          printf("%f ",matrix[i*width+ j]);
+         .          }
+         .  }
+         .  //Check logic
+         .  void  mean_keeping(float *org_img,float *Hysteresis,int width,int height,int alpha,float *Vmap,float *Hmap,float *HR)
+        15  {
+         .  
+         .  	int i,j,m,n,p,q;
+         .  
+         .  	float *patch3x3;
+         .  
+         .  	float *patchaxa;
+         .  	
+         .  	float sum=0;
+         .  
+         .  	int start_x,start_y;
+         .  
+         7  	patch3x3 = (float *)malloc(sizeof(float)*(alpha+1)*(alpha+1));	
+       683  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+         9  	patchaxa = (float *)malloc(sizeof(float)*alpha*alpha);	
+       195  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+     8,199  	for(i=0;i<height;i++)
+ 8,426,496  		for(j=0;j<width;j++)
+         .  		{	
+         .  			start_x=alpha*i;
+         .  			start_y=alpha*j;
+         .  			//Initialize patch pixels to 0
+         .  			for (m=0;m<3*3;m++)
+ 9,437,184  				patch3x3[m]=(float)0;
+         .  
+10,485,764  			for(m=0;m<alpha*alpha;m++)
+18,874,350  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memset-avx2.S:__memset_avx2 (1048575x)
+     1,447  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+        16  				patchaxa[m]=(float)0;
+         .  
+         .  
+ 5,881,790  			if(Hysteresis[i*width + j] !=(float)255 || Vmap[i*width+j]==(float)125 || Hmap[i*width+j]==(float)125) //for a non-pixel
+         .  			{
+         .  				//Rule 1: extract 3x3 patch of LR. I(x,y) is at patch3x3(1,1)
+         .  				for(m=0;m<3;m++)
+         .  					for(n=0;n<3;n++)
+33,545,216  						if((i-1+m)>=0 && (i-1+m) <height && (j-1+n)>=0 && (j-1+n)<width)
+38,756,364  							patch3x3[m*3 +n] = (float)org_img[(i-1+m)*width+(j-1+n)];
+         .  			
+         .  				if(i==236 && j==105)
+         .  				{
+         .  //					printf("\n original 3x3 \n");
+         .  //					print_matrix(patch3x3,3,3);
+         .  				}
+         .  			
+         .  
+         .  				for(m=-1;m<=1;m++) //check for edge
+         .  					for(n=-1;n<=1;n++)
+         .  					{
+18,872,320  						if(i+m>=0 && i+m<height && j+n>=0 && j+n<width && m!=n && m*n==0)
+26,188,800  							if(Hysteresis[(i+m)*width + (j+n)]==(float)255)
+ 1,367,472  								patch3x3[(1+m)*3+(1+n)]=(float)org_img[i*width + j];
+         .  					}
+         .  
+         .  				//Rule 2
+         .  				 for(m=-1;m<=1;m++) //check for edge
+         .                                          for(n=-1;n<=1;n++)
+         .                                          {       
+18,862,080                                                  if(i+m>=0 && i+m<height && j+n>=0 && j+n<width && m!=0 &&n!=0)
+28,256,283                                                          if(Hysteresis[(i+m)*width + (j+n)]==(float)255)
+ 1,806,952                                                                  patch3x3[(1+m)*3+(1+n)]=(float)(patch3x3[1*3 + (1+n)]+patch3x3[(1+m)*3+1])/2;
+         .                                           
+         .  					}			
+         .  				//Interpolate
+         .  				 sum=0;
+50,331,648  				for(m=0;m<alpha;m++)
+         .  					for(n=0;n<alpha;n++)
+         .  					{	sum=0;
+         .  						for(p=0;p<=1;p++)
+         .  							for(q=0;q<=1;q++)
+94,372,864  								sum+=(float)patch3x3[(m+p)*3 + (n+q)];
+68,157,445  						patchaxa[m*alpha+n]=(float)sum/4;
+         .  					}						
+         .  					//Modify patchaxa
+         .  					sum=0;
+30,408,704  					for(m=0;m<alpha;m++)
+ 8,388,608  						for(n=0;n<alpha;n++)
+ 8,388,608  							sum+=(float)patchaxa[m*alpha+n];			
+31,457,280  					for(m=0;m<alpha;m++)
+ 8,388,608  						for(n=0;n<alpha;n++)
+39,845,888  							patchaxa[m*alpha+n]=(float)((patchaxa[m*alpha+n]/sum)*alpha*alpha)*(float)org_img[i*width + j];
+         .  		
+         .  					//Copy to HR
+25,165,824  					for(m=0;m<alpha;m++)
+25,165,824  => /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S:__memcpy_avx_unaligned (2097152x)
+         .  						for(n=0;n<alpha;n++)
+        20  							HR[(start_x+m)*alpha*width +(start_y+n)]=(float)patchaxa[m*alpha+n];	
+         .  			
+         .  			}
+         .  			//mean keeping for all pixels
+         .  			else if(Hysteresis[i*width+j]==(float)255)
+         .  			{
+         .  				sum=0;
+         .  				for(m=0;m<alpha;m++)
+         .                          		for(n=0;n<alpha;n++)
+         .  						sum+=HR[(start_x+m)*alpha*width +(start_y+n)];
+         .  	
+ 9,437,184  				for(m=0;m<alpha;m++)
+         .                          	        for(n=0;n<alpha;n++)
+         .  						HR[(start_x+m)*alpha*width +(start_y+n)]=(float)((HR[(start_x+m)*alpha*width +(start_y+n)]/sum)*alpha*alpha)*(float)org_img[i*width + j];
+         .  			}
+         .  	/*		if(i==236 && j==105)
+         .  			{
+         .  				printf("\n paxa \n");
+         .  				print_matrix(patchaxa,2,2);
+         .  				
+         .  				printf("\n patch3x3 \n");
+         .  				print_matrix(patch3x3,3,3);
+         .  
+         .  				printf("\n pixel intensity: %f\n",(float)org_img[i*width+j]);
+         .  			}*/
+         .  	}
+         8  } 
+         .  
+         .  int compare(int v,int d, int ad)
+         .  {
+         .  	int a=0; //default vertical
+         .  
+   274,240  	if(v>d)
+         .  	{
+         .  		if(v>ad)
+         .  			a=0;
+         .  		else
+         .  			a=-1;
+         .  
+         .  	}
+         .  	else
+         .  	{
+   129,122  		if(d>ad)
+         .  			a=1;
+         .  		else
+         .  			a=-1;
+         .  	}
+         .  	return a;
+         .  }
+         .  
+         .  void horizontal_edge_keeping(float *Hysteresis,float *I_angle,float *org_img,int width,int height,int alpha,float *HR,float *map)
+        18  {
+         .  	int i,j,k,m,n;
+         .  
+         .  	std::vector <int> rod_x;
+         .  	std::vector <int> rod_y;
+         .  	int horizontal,diagonal,anti_diagonal;
+         .          int rod_count=0;
+         1          int horizontal_start=1;
+         .          float theta=0;
+         .          int direction=0;
+         .          int start_x,start_y,end_x,end_y; //Start and stop positions for filling in the HR Image
+         .  	int count=0;
+         .  	float ND=0;
+         .  	int rodysize=0,rodxsize=0;
+         .  
+     4,101  	for(i=0;i<height;i++)
+         .  	{
+     2,048  		horizontal_start=0;
+   170,524  		while(horizontal_start<width) //not to exceed the width of the image
+         .  		{
+         .  			//go to the start of the horizontal rod
+10,676,627  			while(Hysteresis[i*width+horizontal_start]==0 && horizontal_start<width)
+ 2,800,794  				horizontal_start++;
+         .  
+ 2,758,086  			while(Hysteresis[i*width + horizontal_start]!=0 && horizontal_start<width)
+         .  			{
+         .  				rod_x.push_back(i);
+         .  				rod_y.push_back(horizontal_start);
+   344,934  				horizontal_start++;
+         .  			}
+         .  			
+         .  
+         .  		//Check the orientation
+         .  	
+         .  			horizontal=0;diagonal=0;anti_diagonal=0;
+         .  			
+    84,238  			rodysize=rod_y.size();
+         .  						
+   819,607  			for(k=0;k<rodysize;k++)
+         .  			{
+         .  				//Each rod IS a rod
+   574,890  				map[rod_x[k]*width+rod_y[k]]=(float)255;
+         .  				theta=I_angle[rod_x[k]*width+rod_y[k]];
+   459,912  				theta = (180/PI)*theta;
+   344,934  				if(theta<0)
+   201,095  					theta+=(float)180;
+         .  
+   907,502  				if(theta>22.5 && theta<=67.5) //diagonal
+   154,205  					diagonal++;
+   290,301  				else if(theta>112.5 && theta<=157.5) //anti-diagonal
+         .  					anti_diagonal++;
+   332,675  				else if(theta>(157.5) || theta <=22.5) //horizontal
+   112,384  					horizontal++;
+         .  			}
+         .  			direction= compare(horizontal,diagonal,anti_diagonal);
+         .  		
+         .  			//printf("H: %d D:%d AD:%d \n",horizontal,diagonal,anti_diagonal);
+         .  			ND=0;
+   114,270  			if(horizontal==0 && diagonal==0 && anti_diagonal==0)
+         .  			{
+         .  			//	printf("\n unkown direction for H rod. Setting to 0");
+         .  				ND=1;
+         .  			}
+         .  		
+         .  			rodysize=rod_y.size();		
+         .  
+         .  			if(ND==1)
+    43,779  				for(k=0;k<rodysize;k++)
+    76,824  					map[rod_x[k]*width+rod_y[k]]=(float)125;
+         .  		//Checkpoint-1
+         .  		
+         .  			//printf("\n The %d rod (size: %d) starts at (%d,%d) and ends at (%d,%d). Orientation:%d",rod_count++,rod_x.size(),rod_x.front(),rod_y.front(),rod_x.back(),rod_y.back(),direction);
+         .  
+   108,442  			if(direction==0 && ND==0) //replicate horizontally
+         .  			{
+   216,884  				start_x=alpha*rod_x.front();
+   108,442  				start_y=alpha*rod_y.front();
+         .  				
+         .  				end_x=alpha*rod_x.back();
+         .  				end_y=alpha*rod_y.back();
+         .  		
+         .  				count=0;
+    54,221  				rodxsize=rod_x.size();
+         .  				rodysize=rod_y.size();
+         .  
+ 1,301,304  				for(k=0;k<alpha;k++) //no. of times to replicate
+         .  				{
+         .  					
+ 2,277,914  					for(m=0;m<rodxsize;m++)
+         .  					{			
+   435,043  						if(start_x<alpha*height && (start_y+k*rodysize+m)<alpha*width)
+         .  						//HR[(start_x*alpha*width) + (start_y+k*rod_y.size()+m)]=(float)255;	
+ 1,412,906  							HR[(start_x*alpha*width) + (start_y+k*rodysize+m)]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  						//Bottom pixels need to be filled
+ 1,293,798  						for(n=1;n<=(alpha-1);n++)
+   427,500  							if((start_x+n)<alpha*height && (start_y+k*rodysize+m)<width && (rod_x[m]+1)<height)
+   855,000  								HR[(start_x+n)*alpha*width + (start_y+k*rodysize+m)]=(float)org_img[(rod_x[m]+1)*width + rod_y[(int)(count/alpha)]];
+         .  
+   326,274  						count++;		
+         .  					}
+         .  				}
+         .  			}
+         .  			else if(direction==1 && ND==0) //diagonal direction, replicate upwards
+         .  			{
+         .  
+    71,871  				start_x=alpha*rod_x.front() + direction*(alpha-1);
+    71,871  				start_y=alpha*rod_y.front();
+         .  
+         .  				rodxsize=rod_x.size();
+         .                                  rodysize=rod_y.size();				
+         .  
+         .  				count=0;
+ 1,581,162  				for(k=0;k<alpha;k++)
+         .  				{
+   239,094  					for(m=0;m<rodysize;m++)
+         .  					{
+   669,130  						if((start_x -1*k*direction)<alpha*height && (start_x -1*k*direction)>=0 && (start_y + k*rodysize+m)<alpha*width && (start_y + k*rodysize+m)>=0) 
+         .  				//			HR[(start_x -1*k*direction)*alpha*width + (start_y + k*rod_y.size()+m)]=(float)255;	
+ 2,199,998  							HR[(start_x -1*k*direction)*alpha*width + (start_y + k*rodysize+m)]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  						//Top pixels need to be filled if k==0
+   191,180  						if(k==0)
+   661,625  							for(n=1;n<=(alpha-1);n++)
+   472,471  								if((start_x-1*k*direction-n)>=0 && (start_x-1*k*direction-n)<alpha*height && (start_y+k*rodysize+m)<width && (rod_x[m]-1)>=0)
+   497,700  									HR[(start_x-1*k*direction-n)*alpha*width + (start_y+k*rodysize+m)]=(float)org_img[(rod_x[m]-1)*width + rod_y[(int)(count/alpha)]];
+         .  								
+         .  						else //fill the bottom pixels
+     3,069  							for(n=1;n<=(alpha-1);n++)        
+     8,184  								if((start_x-1*k*direction+n)<alpha*height && (start_x-1*k*direction+n)>=0 && (start_y+k*rodysize+m)<width && (rod_x[m]+1)<height)
+    16,368                                                                          HR[(start_x-1*k*direction+n)*alpha*width + (start_y+k*rodysize+m)]=(float)org_img[(rod_x[m]+1)*width + rod_y[(int)(count/alpha)]];	
+         .  	
+    95,590  						count++;
+         .  					}
+         .  				}
+         .  
+         .  			}
+         .  			else if(direction==-1 &&ND==0)//anti-diagonal direction, replicate downwards 
+         .  			{
+         .  				start_x=alpha*rod_x.front();
+         .  				start_y=alpha*rod_y.front();
+         .  				count=0;
+         .  		
+         .  
+         .  				rodxsize=rod_x.size();
+         .                                  rodysize=rod_y.size();
+         .  
+        12  				for(k=0;k<alpha;k++)
+         .  				{
+         .  
+         .  					for(m=0;m<rodysize;m++)
+         .  					{
+         .  						if((start_x -1*k*direction)<alpha*height && (start_x -1*k*direction)>=0 && (start_y + k*rodysize+m)<alpha*width && (start_y + k*rod_y.size()+m)>=0)
+         .  		//				HR[(start_x-1*k*direction)*alpha*width + (start_y + k*rod_y.size() + m)]=(float)255;	
+         .  							HR[(start_x-1*k*direction)*alpha*width + (start_y + k*rodysize + m)]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  				
+-- line 307 ----------------------------------------
+-- line 324 ----------------------------------------
+         .  			}
+         .  		
+         .  /**/
+         .  			rod_x.erase(rod_x.begin(),rod_x.end());
+         .                  	rod_y.erase(rod_y.begin(),rod_y.end());
+         .  		}//end horizontal movement
+         .  	}//end of i for height
+         .  
+        11  }
+         .  
+         .  void vertical_edge_keeping(float *Hysteresis,float *I_angle,float *org_img,int width,int height,int alpha,float *HR,float *map)
+        18  {
+         .  
+         .  	int i,j,k,m,n;
+         .  
+         .  	std::vector <int> rod_x;
+         .  	std::vector <int> rod_y;
+         .  	int vertical,diagonal,anti_diagonal;
+         .  	int rod_count=0;
+         1  	int vert_start=1;
+         .  	float theta=90;
+         .  	int direction=0;
+         .  	int count=0;
+         .  	int ND=0;
+         .  	int start_x,start_y,end_x,end_y; //Start and stop positions for filling in the HR Image
+     4,107  	for(j=0;j<width;j++)
+     2,048  	{	vert_start=0;
+         .  		
+   214,624  		while(vert_start<height) //not to exceed the height of the image
+         .  		{
+         .  			//go to the starting of the rod
+10,226,898  			while(Hysteresis[vert_start*width + j]==0 && vert_start<height)
+ 2,800,794  				vert_start++;
+         .  			
+ 2,411,194  			while(Hysteresis[vert_start*width + j]!=0 && vert_start < height)
+         .  			{
+         .  				rod_x.push_back(vert_start);
+         .  				rod_y.push_back(j);
+   344,934  				vert_start++;
+         .  				//printf("\n pixel (%d,%d) in rod",vert_start,j);
+         .  				//getchar();	
+         .  			}
+         .  			//Check the orientation
+         .  			vertical=0;diagonal=0,anti_diagonal=0;
+         .  
+   636,922  			for(k=0;k<rod_x.size();k++)
+         .  			{
+         .  				//Fill the edge map. Each rod IS a rod
+   574,890  				map[rod_x[k]*width + rod_y[k]]=(float)255;
+         .  				theta=I_angle[rod_x[k]*width + rod_y[k]];
+   459,912  				theta= (180/PI)*theta;
+   344,934  				if(theta<0)
+   169,745  					theta+=(float)180;
+         .  
+   666,517  				if(theta > 22.5 && theta <=67.5) //diagonal +1
+   154,205  					diagonal++;
+   258,951  				else if(theta>112.5 && theta<=157.5) //anti-diagonal -1
+         .  					anti_diagonal++;
+   204,387  				else if(theta>67.5 && theta<=112.5) //vertical 0
+   187,364  					vertical++;
+         .  			}
+         .  			
+         .  			//Fill the 
+         .  
+         .  			direction=compare(vertical,diagonal,anti_diagonal);
+         .  			ND=0;
+   103,641  			if(vertical==0 && diagonal==0 &&anti_diagonal==0)
+         .  			{
+         .  				//printf("\n Unknown direction for V rod. Set to 0");
+         .  				ND=1;
+         .  			}
+         .  			if(ND==1)
+   103,321  				for(k=0;k<rod_x.size();k++)
+   273,198  					map[rod_x[k]*width + rod_y[k]]=(float)125;
+         .  	
+         .  			//if(!ND)
+         .  			//	printf("\n (ND %d) rod %d of size %d starts at (%d,%d) ends at (%d,%d) direction %d.",ND,rod_count++,rod_x.size(),rod_x.front(),rod_y.front(),rod_x.back(),rod_y.back(),direction);
+         .  
+    36,676  			if(direction == 0 && ND==0) //vertical
+         .  			{
+    36,676  				start_x=alpha*rod_x.front();
+    55,014  				start_y=alpha*rod_y.front();
+         .  				end_x=alpha*rod_x.back();
+         .  				end_y=alpha*rod_y.back();
+         .  
+         .  				count=0;
+ 1,081,942  				for(k=0;k<alpha;k++) //Number of times to repeat this rod
+         .  				{	
+   146,924  					for(m=0;m<rod_x.size();m++)
+         .  					{
+   220,716  						if((start_x + k*rod_x.size()+m)<alpha*height &&start_y<alpha*width)
+         .  							//HR[(start_x + k*rod_x.size()+m)*alpha*width + start_y]=(float)255;
+   257,512  							HR[(start_x + k*rod_x.size()+m)*alpha*width + start_y]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  						//Pixel to the right need to be filled
+   478,218  						for(n=1;n<=(alpha-1);n++)
+   220,716  							if((start_x + k*rod_x.size()+m)<alpha*height &&(start_y+n)<alpha*width && (rod_y[m]+1)<width) //copy adjacent pixel
+   478,218  								HR[(start_x + k*rod_x.size()+m)*alpha*width + start_y+n]=(float)org_img[rod_x[(int)(count/alpha)]*width + (rod_y[m]+1)]; 
+         .  						count++;			
+         .  					}
+         .  					
+         .  				}				
+         .  			}
+         .  			else if(direction==1 && ND==0) //diagonal
+         .  			{
+         .  
+    44,584  				start_x=alpha*rod_x.front(); 
+    89,168  				start_y=alpha*rod_y.front() + direction*(alpha-1); //the rod direction is perpendicular to the gradient. Start from the right corner
+         .  				end_x=alpha*rod_x.back();
+         .  				end_y=alpha*rod_y.back();
+         .  
+         .  				count=0;
+   200,628  				for(k=0;k<alpha;k++) //Number of times to repeat this rod
+         .  				{
+   427,128  					for(m=0;m<rod_x.size();m++)
+         .  					{
+ 1,466,880  						if((start_x + k*rod_x.size()+m)<alpha*height &&(start_y-1*k*direction)<alpha*width&&(start_y-1*k*direction)>=0)
+         .  							//HR[(start_x + k*rod_x.size()+m)*alpha*width + (start_y-1*k*direction)]=(float)255;
+ 1,422,296  						HR[(start_x + k*rod_x.size()+m)*alpha*width + (start_y-1*k*direction)]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  					//if k=0, fill pixels to the left
+   204,208  						if(k==0)
+         .  						{
+   255,260  							for(n=1;n<=(alpha-1);n++)                                        
+   357,364                  						if((start_x + k*rod_x.size()+m)<alpha*height &&(start_y-1*k*direction-n)>=0 && (start_y-1*k*direction-n)<alpha*width && (rod_y[m]-1)>=0) //copy adjacent pixel
+ 1,128,738                                                                  	HR[(start_x + k*rod_x.size()+m)*alpha*width + start_y-1*k*direction-n]=(float)org_img[rod_x[(int)(count/alpha)]*width + (rod_y[m]-1)]; 
+   306,312                                                  	count++;
+         .  						}	
+         .  					//if k=1, fill pixels to the right
+         .  						else
+         .  						{
+   204,208  							for(n=1;n<=(alpha-1);n++)
+   408,416                                                          	if((start_x + k*rod_x.size()+m)<alpha*height &&(start_y-1*k*direction+n)<alpha*width && (start_y-1*k*direction+n)>=0 && (rod_y[m]+1)<width) //copy adjacent pixel
+ 1,164,516                                                                  	HR[(start_x + k*rod_x.size()+m)*alpha*width + start_y-1*k*direction+n]=(float)org_img[rod_x[(int)(count/alpha)]*width + (rod_y[m]+1)];
+         .                                                  	count++;
+         .  						}
+         .  					}
+         .  				}
+         .  			}
+         .  			else if(direction==-1 && ND==0)//anti-diagonal
+         .  			{
+         .  
+         .  				start_x=alpha*rod_x.front(); 
+         .  				start_y=alpha*rod_y.front(); //the rod direction is perpendicular to the gradient. Starts at same y position as vertical
+         .  				end_x=alpha*rod_x.back();
+         .  				end_y=alpha*rod_y.back();
+         .  				count=0;
+         6  				for(k=0;k<alpha;k++) //Number of times to repeat this rod
+         .  				{
+         .  					for(m=0;m<rod_x.size();m++)
+         .  					{	if((start_x + k*rod_x.size()+m)<alpha*height &&(start_y-1*k*direction)<alpha*width&&(start_y-1*k*direction)>=0)
+         .  							//HR[(start_x + k*rod_x.size()+m)*alpha*width + (start_y-1*k*direction)]=(float)255;				
+         .  							HR[(start_x + k*rod_x.size()+m)*alpha*width + (start_y-1*k*direction)]=(float)org_img[rod_x[m]*width + rod_y[m]];
+         .  
+         .  						if(k==0) //fill to the right
+         .  						{
+-- line 477 ----------------------------------------
+-- line 493 ----------------------------------------
+         .  
+         .  			//printf("\n The %d rod (size: %d) starts at (%d,%d) and ends at (%d,%d). Orientation:%d",rod_count++,rod_x.size(),rod_x.front(),rod_y.front(),rod_x.back(),rod_y.back(),compare(vertical,diagonal,anti_diagonal));
+         .  			rod_x.erase(rod_x.begin(),rod_x.end());	
+         .  			rod_y.erase(rod_y.begin(),rod_y.end());	
+         .  		//getchar();
+         .  		} 
+         .  	}//end for j on width
+         .  
+        11  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: main.c
+--------------------------------------------------------------------------------
+        Ir 
+
+-- line 3 ----------------------------------------
+         .  #include <stdio.h>
+         .  #include <stdlib.h>
+         .  #include <math.h>
+         .  #include <sys/time.h>
+         .  #include "main.h"
+         .  #include "amplify.h"
+         .  
+         .  int main (int argc, char **argv)
+        10  {
+         .  	/*Declare Variables*/
+         .  	float *org_img;
+         .  	float *Gx_mask, *Gy_mask;
+         .  	float *IGx, *IGy;	
+         .  	float *Gxy, *I_angle, *High_res;
+         .  	float *suppressed, *threshold, *hyst;
+         .  	float *Vmap, *Hmap;
+         .  	float *HRV, *HRH;
+-- line 19 ----------------------------------------
+-- line 32 ----------------------------------------
+         .  	char gyName[20];
+         .  	char fileGXY[20];
+         .  	char fileIAng[20];
+         .  	char filetHold[20];
+         .  	char fileSupp[25];
+         .  	char fileHyst[25];
+         .  	char fileHigh[25];
+         .  	
+         2  	if(argc != 5)
+         .  	{
+         .  		printf("\n Correct Usage: ./myexec <image name> <gaussian width> <sigma> <alpha>");
+         .  		return 0;
+         .  	}
+         .  	
+         .  	//Use timer to determine read time. 
+         9  	gettimeofday(&rStart, NULL);
+     1,626  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+         .      read_image_template(argv[1], &org_img, &img_width, &img_height); 
+         4  	gettimeofday(&rStop, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	
+         .  	//Read arguments from the command line 
+         .  	gauss_width = atoi(argv[2]);
+         .  	sigma = atoi(argv[3]);
+         .  	alpha = atoi(argv[4]);
+         .  	
+         .  	//Start timer 
+         4  	gettimeofday(&start, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	
+         .  	//Allocate memory for masks
+         8  	Gx_mask = (float *)malloc(sizeof(float) * (gauss_width * gauss_width));
+       183  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         4  	Gy_mask = (float *)malloc(sizeof(float) * (gauss_width * gauss_width));
+       183  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  
+         .  	//Allocate memory for intermediate images
+         7  	IGy = (float *)malloc(sizeof(float) * (img_width * img_height));
+       278  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         7  	IGx = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+         7  	Gxy = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         7  	I_angle = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+         7  	suppressed = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         7  	threshold = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+        10  	High_res = (float *)malloc(sizeof(float) * ((img_width * alpha) * (img_height * alpha)));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+        10  	HRV = (float *)malloc(sizeof(float) * ((img_width * alpha) * (img_height * alpha)));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+        11  	HRH = (float *)malloc(sizeof(float) * ((img_width * alpha) * (img_height * alpha)));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+         7  	hyst = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  	
+         7  	Vmap = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         7  	Hmap = (float *)malloc(sizeof(float) * (img_width * img_height));
+       280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+         .  
+         .  /*1. Canny Edge Detector */
+         .  	//Start calculation time timer
+         .  
+         .  	printf("\n 1. Executing the Canny Edge Detector...");
+         4  	gettimeofday(&calcStart, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	//Give Gx_mask, Gy_mask values
+         7  	gaussianX_mask(Gx_mask, gauss_width, sigma);
+    38,563  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:gaussianX_mask(float*, int, float) (1x)
+         5  	gaussianY_mask(Gy_mask, gauss_width, sigma);
+    37,818  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:gaussianY_mask(float*, int, float) (1x)
+         .  
+         .  
+         .  	printf("\n 1a. Producing magnitude and angle maps...");
+         .  	//Get IGy: convolve(org_img,Gx_mask)
+         8  	convolve<float>(org_img, img_width, img_height, Gx_mask, gauss_width, IGy);
+2,548,961,361  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:void convolve<float>(float*, int, int, float*, int, float*) (1x)
+         .  	//Get IGx: convolve(org_img, Gy_mask)
+         9  	convolve<float>(org_img, img_width, img_height, Gy_mask, gauss_width, IGx);
+2,548,961,361  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:void convolve<float>(float*, int, int, float*, int, float*) (1x)
+         .  	//Get magnitude based on ONLY IGy and IGx
+         8  	magnitude(IGx, IGy, img_width, img_height, Gxy); 
+12,596,246  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:magnitude(float*, float*, int, int, float*) (1x)
+         .  	//Get directionality based on ONLY IGy and IGx
+         7  	angle(IGy, IGx, img_width, img_height, I_angle); 
+221,349,536  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:angle(float*, float*, int, int, float*) (1x)
+         4  	gettimeofday(&calcStop, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	memcpy(suppressed, Gxy, sizeof(float) * img_width * img_height);
+         .  	//Suppress auxillary image
+         .  
+         .  
+         .  	printf("\n 1b. Running non-maximal suppression and edge-linking...");
+         6  	nonmaximal_suppression<float>(suppressed, I_angle, 0, img_width, img_height);
+41,149,041  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:void nonmaximal_suppression<float>(float*, float*, int, int, int) (1x)
+         .  	//Use thresholding to remove some noise from auxillary image
+         5  	double_thresh(suppressed, threshold, img_width, img_height); //VKP: Need some changes here
+478,333,774  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:double_thresh(float*, float*, int, int) (1x)
+         6  	edge_linking(threshold, hyst, img_width, img_height);
+23,159,096  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/main.h:edge_linking(float*, float*, int, int) (1x)
+         .  
+         .  
+         .  	printf("\n 1c. Edge map ready...");
+         .  
+         .  	printf("\n 2. Replicating vertical edge rods...");
+         .  	//Edge Keeping in vertical and horizontal directions. 
+         .  //	vertical_edgekeeping(Vmap, hyst, I_angle, HRV, alpha, org_img, img_width, img_height);
+         .  //	horizontal_edgekeeping(Hmap, hyst, I_angle, HRH, alpha, org_img, img_width, img_height);
+         .  
+        10  	vertical_edge_keeping(hyst,I_angle,org_img,img_width,img_height,alpha,HRV,Vmap);
+33,765,964  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify.h:vertical_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (1x)
+         .  
+         .  	printf("\n 3. Replicating horizontal edge rods...");
+         9  	horizontal_edge_keeping(hyst,I_angle,org_img,img_width,img_height,alpha,HRH,Hmap);	
+40,266,730  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify.h:horizontal_edge_keeping(float*, float*, float*, int, int, int, float*, float*) (1x)
+         .  	
+         6  	memcpy(High_res, HRV, sizeof(float)*alpha*img_width*img_height*alpha);
+         .  	
+     9,221  	for(i=0;i<img_height; i++)
+         .  	{
+ 2,104,320  		for(j=0;j<img_width; j++)
+         .  		{
+11,534,336  			for(m=0;m<alpha; m++)
+         .  			{
+12,582,912  				for(n=0;n<alpha;n++)
+         .  				{
+ 8,391,692  					if((i*alpha+m)<alpha*img_height && (j*alpha+n) <alpha*img_width)
+         .  					{
+29,360,128  						High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] += HRH[(i*alpha+m)*img_width*alpha+(j*alpha+n)];
+68,739,322  						if((Hmap[i*img_width+j] == Vmap[i*img_width+j]) && Hmap[i*img_width+j] == 255)
+         .  						{
+         .  							//High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] /= 2;
+    56,641  							Hmap[i*img_width+j] = 125;
+ 4,307,586  							Vmap[i*img_width+j] = 125;
+         .  						}
+28,861,210  						else if((Hmap[i*img_width+j] == 255 && Vmap[i*img_width+j] != 255) 
+43,459,625  							|| (Hmap[i*img_width+j] != 255 && Vmap[i*img_width+j] == 255))
+         .  						{
+   700,044  							High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] = High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] + HRH[(i*alpha+m)*img_width*alpha+(j*alpha+n)];
+         .  						}
+         .  					}
+         .  				}
+         .  			}
+         .  		}
+         .  	}
+         .  
+         .  	//Mean Keepinig
+         .  
+         .  	printf("\n 4. Interpolating non-edge pixels...");
+         9  	mean_keeping(org_img,hyst,img_width,img_height,alpha,Vmap,Hmap,High_res);
+620,280,155  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/amplify.h:mean_keeping(float*, float*, int, int, int, float*, float*, float*) (1x)
+         .  
+         .  	/********************* Lenna no artifacts up to this point********************/
+         .  	/* Find highest pixel value in the High Resolution Image */
+         .  	float high_val = 0;
+     7,180  	for(i=0;i<img_height; i++)
+         .  	{
+ 4,201,472  		for(j=0;j<img_width; j++)
+         .  		{
+19,922,944  			for(m=0;m<alpha; m++)
+         .  			{
+12,582,912  				for(n=0;n<alpha;n++)
+         .  				{
+ 8,388,623  					if((i*alpha+m)<alpha*img_height && (j*alpha+n) <alpha*img_width)
+         .  					{
+25,165,824  						if(High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] > high_val)
+         .  						{
+         .  							high_val = High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)];
+         .  						}
+         .  					}
+         .  				}
+         .  			}
+         .  		}
+         .  	} 
+         .  	/* Normalize the image */
+     7,169  	for(i=0;i<img_height; i++)
+         .  	{
+ 4,200,448  		for(j=0;j<img_width; j++)
+         .  		{
+19,922,944  			for(m=0;m<alpha; m++)
+         .  			{
+12,582,912  				for(n=0;n<alpha;n++)
+         .  				{
+ 8,388,608  					if((i*alpha+m)<alpha*img_height && (j*alpha+n) <alpha*img_width)
+         .  					{
+33,555,458  						High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)] =  High_res[(i*alpha+m)*img_width*alpha+(j*alpha+n)]*(255/high_val);
+         .  					}
+         .  				}
+         .  			}
+         .  		}
+         .  	}
+         .  
+         .  	//Mean keeping
+         .  	//mean(org_img, High_res, hyst, img_width, img_height, alpha, Vmap, Hmap);
+-- line 201 ----------------------------------------
+-- line 206 ----------------------------------------
+         .  	sprintf(fileGXY, "Gxy_img_%d.pgm", img_width);
+         .  	sprintf(fileIAng, "I_Angle_%d.pgm", img_width);
+         .  	sprintf(fileSupp, "Suppressed_%d.pgm", img_width);
+         .  	sprintf(filetHold, "Threshold_%d.pgm", img_width);
+         .  	sprintf(fileHyst, "Hystersis_%d.pgm", img_width);
+         .  	sprintf(fileHigh, "output%d.pgm", img_width*alpha);
+         .  	
+         .  	//Calculate write time 
+         4  	gettimeofday(&wStart, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	//Write out the images
+         7  	write_image_template<float>(nameIGy, HRV, alpha * img_width, alpha * img_height);
+ 7,085,008  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         7  	write_image_template<float>(nameIGx, HRH, alpha *img_width, alpha * img_height); 
+ 7,081,903  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         6  	write_image_template<float>(fileGXY, Gxy, img_width, img_height);
+ 1,773,487  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         .  //	write_image_template<float>(fileIAng, I_angle, img_width, img_height);
+         6  	write_image_template<float>(fileSupp, suppressed, img_width, img_height);
+ 1,773,487  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         6  	write_image_template<float>(filetHold, threshold, img_width, img_height);
+ 1,773,487  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         6  	write_image_template<float>(fileHyst, hyst, img_width, img_height);
+ 1,773,487  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         7  	write_image_template<float>(fileHigh, High_res, img_width * alpha, img_height * alpha);
+ 7,081,903  => /home/sirsteven/bitbucket/2017_spring_ecpe170/lab05/part5/image_template.h:void write_image_template<float>(char*, float*, int, int) (1x)
+         .  
+         .  	printf("\n 5. The output is written in: %s \n",fileHigh);
+         .  
+         4  	gettimeofday(&wStop, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	
+         4  	gettimeofday(&stop, NULL);
+         5  => /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c:__gettimeofday_syscall (1x)
+         .  	//Calculate elapsed times (in us)
+         .  	time = (float)((stop.tv_sec * 1000000 + stop.tv_usec) - (start.tv_sec * 1000000 + start.tv_usec));
+         .  	rTime = (float)((rStop.tv_sec * 1000000 + rStop.tv_usec) - (rStart.tv_sec * 1000000 + rStart.tv_usec));
+         .  	wTime = (float)((wStop.tv_sec * 1000000 + wStop.tv_usec) - (wStart.tv_sec * 1000000 + wStart.tv_usec));
+         .  	calcTime = (float)((calcStop.tv_sec * 1000000 + calcStop.tv_usec) - (calcStart.tv_sec * 1000000 + calcStart.tv_usec));
+         3  	free(IGx);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(IGy);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(Gxy);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(I_angle);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(suppressed);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(hyst);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(High_res);
+        56  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         3  	free(threshold);
+        49  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:free (1x)
+         .  	
+         1  	return 0;
+         .  
+        12  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: main.h
+--------------------------------------------------------------------------------
+           Ir 
+
+-- line 4 ----------------------------------------
+            .  #include <sys/time.h>
+            .  #include <vector>
+            .  #include <cstring>
+            .  
+            .  typedef enum{ FALSE, TRUE} boolean;
+            .  
+            .  /*Function that returns a gaussian mask in the X direction*/
+            .  void gaussianX_mask(float *mask, int gauss_width, float sigma)
+            7  {
+            .  	int i,j;
+            .  	float E = 2.7182818;
+            .  	
+          213  	for(i=-1*gauss_width/2; i <= gauss_width/2; i++)
+            .  	{
+          484  		for(j=-1*gauss_width/2; j <= gauss_width/2; j++)
+            .  		{
+        1,819  			mask[(i+gauss_width/2)*gauss_width+j+gauss_width/2]= -1*i*pow(E,-1*(i*i+j*j)/(2*sigma*sigma));
+       34,653  => /build/glibc-t3gR2i/glibc-2.23/math/w_pow.c:pow (120x)
+        1,379  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+            .  		}
+            .  	}
+            8  }
+            .  /*   Function that returns a gaussian mask in the Y direction  */
+            .  void gaussianY_mask(float *mask, int gauss_width, float sigma)
+            7  {
+            .  	int i,j;
+            .  	float E = 2.7182818;
+            .  	
+          189  	for(i=-1*gauss_width/2; i <= gauss_width/2; i++)
+            .  	{
+          484  		for(j=-1*gauss_width/2; j <= gauss_width/2; j++)
+            .  		{
+        2,178  			mask[(i+gauss_width/2)*gauss_width+j+gauss_width/2]= -1*j*pow(E,-1*(i*i+j*j)/(2*sigma*sigma));
+       34,952  => /build/glibc-t3gR2i/glibc-2.23/math/w_pow.c:pow (121x)
+            .  		}
+            .  	}
+            8  }
+            .  /*  Define and declare convolve function  */
+            .  template <class T>
+           14  void convolve(T *org_img, int img_width, int img_height, float *mask, int gauss_width, float *op_img)
+            .  {
+            .  	int i, j, k, l;
+            .  	float temp;
+        4,166  	for(i=0; i<img_height; i++)
+            .  	{
+    6,330,368  		for(j=0; j<img_width; j++)
+            .  		{
+            .  			temp = 0;
+  136,284,160  			for(k=-1*gauss_width/2; k<=gauss_width/2; k++)
+            .  			{
+  576,040,960  				for(l=-1*gauss_width/2; l<=gauss_width/2; l++)
+            .  				{
+2,348,521,224  					if(((i+k) < img_height) && ((j+l) < img_width) && ((i+k)>= 0) && ((j+l)>=0))
+2,020,256,056  						temp += mask[(k+gauss_width/2)*gauss_width+(l+gauss_width/2)]*org_img[(i+k)*img_width+(j+l)];
+            .  				}
+            .  			}
+   10,485,760  			op_img[i*img_width+j] = (float)temp;
+            .  		}
+            .  	}
+           14  }
+            .  /*   Define and declare convolve function with an offset   */
+            .  template <class T> void convolve2(T *org_img, float *mask, float *op_img, int img_width, int img_height, int gauss_width, int offset, int padHpc)
+            .  {
+            .          float temp;
+            .          int i, j, k, l;
+            .  
+            .          for(i = offset; i < img_height + offset; i++)
+            .          {
+-- line 68 ----------------------------------------
+-- line 81 ----------------------------------------
+            .                                  }
+            .                          }
+            .                          op_img[(i - offset)*img_width + j] = (T)temp;
+            .                  }
+            .          }
+            .  }
+            .  /*   Goes pixel by pixel and calculates the magnitude of the pixel    */
+            .  void magnitude(float *mask1, float *mask2, int img_width, int img_height, float *Gxy)
+            9  {
+            .  	int i, j;
+            .  	float temp1, temp2;
+        4,101  	for(i=0; i<img_height; i++)
+            .  	{
+    2,106,368  		for(j=0; j<img_width; j++)
+            .  		{
+    1,048,576  			temp1 = mask1[i*img_width+j] * mask1[i*img_width+j];
+    1,048,576  			temp2 = mask2[i*img_width+j] * mask2[i*img_width+j];
+    8,388,608  			Gxy[i*img_width+j] = sqrt(temp1+temp2);
+            .  		}
+            .  	}
+            8  }
+            .  /*   Goes pixel by pixel and calculates the directionality of the pixel    */
+            .  void angle(float *gy_img, float *gx_img, int img_width, int img_height, float *I_angle)
+           14  {
+            .  	int i, j;
+            .  	float temp;
+        5,125  	for(i=0; i<img_height; i++)
+            .  	{
+    2,109,440  		for(j=0; j<img_width; j++)
+            .  		{
+   10,485,764  			I_angle[i*img_width+j] = atan2(gy_img[i*img_width+j], gx_img[i*img_width+j]);
+  208,747,843  => /build/glibc-t3gR2i/glibc-2.23/math/w_atan2.c:atan2 (1048575x)
+        1,342  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+            .  		}
+            .  	}
+            8  }
+            .  
+            .  //Needed for qsort functionality
+            .  int comp(const void * a, const void * b)
+            .  {
+   38,511,932  	return ( *(int*)a - *(int*)b );
+   19,255,966  }
+            .  void double_thresh(float *suppress, float * hyst, int img_width, int img_height)
+           11  {
+            .  	int i, j, index;
+            .  	float thresh, thresh_low;
+            .  	float *supp;
+            .  
+            8  	supp = (float *)malloc(sizeof(float) * (img_width * img_height));
+          280  => /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c:malloc (1x)
+            4  	memcpy(supp, suppress, sizeof(float)*img_width * img_height); //VKP: You forgot include sizeof(float). memcpy is byte-wise and doesn't care about the data-type
+            .   
+            .   	memcpy(hyst, suppress, sizeof(float)*img_width * img_height); //VKP: this copy operation was missing
+            .  
+           11  	qsort(supp, img_width * img_height, sizeof(float), comp);
+  465,473,896  => /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_avx'2 (1x)
+            .  	
+            .  	index = img_width * img_height * float(0.90); //VKP: Change it to 0.90
+            .  	
+            8  	thresh = supp[index];
+            .  	
+            2  	thresh_low = thresh/5;
+            .  	
+            .  	//Assign 255 to strong pixels and 125 to weak pixels
+            .  	
+        4,101  	for(i=0;i<img_height;i++)
+    2,104,320                  for(j=0;j<img_width;j++)
+    3,145,728                          if(hyst[i*img_width+j]>thresh)
+    1,025,517                                  hyst[i*img_width + j]= (float)255;
+    3,774,874                          else if (hyst[i*img_width+j]<thresh && hyst[i*img_width+j]>thresh_low)
+      255,832                                  hyst[i*img_width + j]= (float)125;
+            .                          else
+    1,631,606                                  hyst[i*img_width + j]= (float)0;	
+            .  		
+            8  }
+            .  
+            .  void edge_linking(float *buffer, float *A , int width, int height)
+           14  {
+            .  
+            .  	int i,j; //variables were undeclared
+            .  	int buff_height=height;
+            .  
+            .  	int offset=0;
+            .  	memcpy(A,buffer,sizeof(float)*width*height); //VKP: This memcpy was missing too
+            .  
+        2,055  	for(i=offset;i<height+offset;i++)
+    7,225,428                  for(j=0;j<width;j++)
+            .                  {
+            .  
+    4,194,304                          if(buffer[i*width + j]==(float)125) //Check nearest 8 neighbors
+            .                          {
+            .                  //                flag=1;
+            .  				//initially set the weak pixel to 0     
+      127,916  				A[(i-offset)*width + j]=(float)0;	
+            .  
+            .  				//top and bottom (i-1,j) and (i+1,j)
+      255,832  				 if(i-1>=0)
+      895,412                                          if(buffer[(i-1)*width +j]==(float)255)
+        2,323                                                  A[(i-offset)*width+j]=(float)255;
+      255,832                                  if(i+1<buff_height)
+      895,412                                          if(buffer[(i+1)*width + j]==(float)255)
+        2,596                                                  A[(i-offset)*width+j]=(float)255;
+            .  				
+            .  				//left and right (i,j-1) and (i,j+1)
+      255,832  				 if(j-1>=0)
+      511,664                                          if(buffer[i*width + j-1]==(float)255)
+        1,865                                                  A[(i-offset)*width + j]=(float)255;
+      383,748                                  if(j+1<width)
+      511,664                                          if(buffer[i*width + j+1]==255)
+        1,546                                                   A[(i-offset)*width + j]=(float)255;
+            .  				
+            .  				//Diagonal Pixels (i-1,j-1) and (i+1,j+1)
+    1,278,596  				if(i-1 >=0 && j-1 >=0)
+      895,412                                          if(buffer[(i-1)*width + j-1]==(float)255)
+        7,218                                                  A[(i-offset)*width + j]=(float)255;
+      895,412                                  if(i+1<buff_height && j+1 <width)
+      895,412                                          if(buffer[(i+1)*width + j+1]==(float)255)
+          752                                                  A[(i-offset)*width + j]=(float)255;
+            .  
+            .  				//Anti-Diagonal Pixels (i-1,j+1) (i+1,j-1)
+      511,664  				if(i-1>=0 && j+1 <width)
+      895,412                                          if(buffer[(i-1)*width + j+1]==(float)255)
+        3,450                                                  A[(i-offset)*width + j]=(float)255;
+      511,664                                  if(i+1<buff_height && j-1 >=0)
+      895,412                                          if(buffer[(i+1)*width + j-1]==(float)255)
+      386,458                                                  A[(i-offset)*width + j]=(float)255;
+            .                          }
+            .                  }
+            .  
+            .  				
+            8  }
+            .  
+            .  
+            .  
+            .  //VKP: Dr. Pallipuram's version of suppression
+            .  template <class T>
+            7  void nonmaximal_suppression(float *img,float *angle,int offset, int width,int height)
+            .  {
+            .          int i,j;
+            .          float theta=0;int count=0;
+            .          float mag=0;
+        3,079          for(i=offset;i<offset+height;i++)
+            .          {
+    2,108,416                  for(j=0;j<width;j++)
+            .                  {
+            .                          theta=angle[i*width+j];
+            .                          //convert theta from radians to degrees
+    4,194,304                          theta=(180/M_PI)*theta;
+    2,097,152                          if(theta<0)
+    1,009,034                                  theta+=(float)180;
+    1,048,576                          mag=img[i*width+j];
+    4,647,598                          if(theta>(157.5) || theta <=22.5) //Left and Right
+            .                          {
+      801,978                                  if((j-1) >=0)
+    1,199,901                                    if(mag<img[(i)*width+j-1])
+      104,381                                                img[i*width+j]=(float)0;
+            .  
+    1,202,967                                  if((j+1)<width)
+    1,199,913                                          if(mag<img[(i)*width+j+1])
+      370,336                                                  img[i*width+j]=(float)0;
+            .                          }
+            .  
+    3,789,184                          if(theta>(22.5) && theta <=67.5) //Diagonal pixels
+            .                          {
+    1,018,018                                  if((i-1)>=0 && (j-1) >=0)
+    1,276,616                                          if(mag<img[(i-1)*width+j-1])
+       69,485                                                  img[i*width+j]=(float)0;
+    1,018,018                                  if((i+1)<height && (j+1) <width)
+    1,273,529                                          if(mag<img[(i+1)*width+j+1])
+      230,598                                                  img[i*width+j]=(float)0;
+            .                          }
+    3,280,173                          if(theta>(67.5) && theta <= 112.5) //top and bottom. 
+            .                          {
+      393,782                                  if((i-1)>=0)
+      979,345                                          if(mag<img[(i-1)*width+j])
+       49,604                                                  img[i*width+j]=(float)0;
+      393,782                                  if((i+1)<height)
+      979,360                                          if(mag<img[(i+1)*width+j])
+      181,586                                                  img[i*width+j]=(float)0;
+            .  
+            .                          }
+    2,886,393                          if(theta>(112.5) && theta <= 157.5) //Anti Diagonal.
+            .                          {
+            .                                  if((i+1)<height && (j-1)>=0)
+            .                                          if(mag<img[(i+1)*width + j-1])
+            .                                                  img[i*width+j]=(float)0;
+            .                                  if((i-1) >=0 &&(j+1)<=width)
+            .                                          if(mag<img[(i-1)*width+j+1])
+            .                                                  img[i*width+j]=(float)0;
+    3,341,919                                                  img[i*width+j]=(float)0;
+            .  
+            .  
+            .                          }
+            .                  }
+            .          }
+            7  }
+            .  
+            .  
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/5/bits/stl_iterator.h
+--------------------------------------------------------------------------------
+     Ir 
+
+-- line 733 ----------------------------------------
+      .        typedef typename __traits_type::reference 	reference;
+      .        typedef typename __traits_type::pointer   	pointer;
+      .  
+      .        _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+      .        : _M_current(_Iterator()) { }
+      .  
+      .        explicit
+      .        __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+108,442        : _M_current(__i) { }
+      .  
+      .        // Allow iterator to const_iterator conversion
+      .        template<typename _Iter>
+      .          __normal_iterator(const __normal_iterator<_Iter,
+      .  			  typename __enable_if<
+      .        	       (std::__are_same<_Iter, typename _Container::pointer>::__value),
+      .  		      _Container>::__type>& __i) _GLIBCXX_NOEXCEPT
+      .          : _M_current(__i.base()) { }
+-- line 749 ----------------------------------------
+-- line 918 ----------------------------------------
+      .  #endif
+      .      { return __lhs.base() - __rhs.base(); }
+      .  
+      .    template<typename _Iterator, typename _Container>
+      .      inline typename __normal_iterator<_Iterator, _Container>::difference_type
+      .      operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+      .  	      const __normal_iterator<_Iterator, _Container>& __rhs)
+      .      _GLIBCXX_NOEXCEPT
+    176      { return __lhs.base() - __rhs.base(); }
+      .  
+      .    template<typename _Iterator, typename _Container>
+      .      inline __normal_iterator<_Iterator, _Container>
+      .      operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      .  	      __n, const __normal_iterator<_Iterator, _Container>& __i)
+      .      _GLIBCXX_NOEXCEPT
+      .      { return __normal_iterator<_Iterator, _Container>(__i.base() + __n); }
+      .  
+-- line 934 ----------------------------------------
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-t3gR2i/glibc-2.23/string/../bits/stdlib-bsearch.h
+  /build/glibc-t3gR2i/glibc-2.23/debug/printf_chk.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/cacheinfo.c
+  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/syscall-template.S
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_ceil.S
+  /build/glibc-t3gR2i/glibc-2.23/libio/filedoalloc.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/x86_64/brk.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_ceilf.S
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strtok.S
+  /build/glibc-t3gR2i/glibc-2.23/malloc/morecore.c
+  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/brk.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/./dl-load.h
+  /build/glibc-t3gR2i/glibc-2.23/csu/../sysdeps/unix/sysv/linux/x86_64/init-first.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_exp.c
+  /build/glibc-t3gR2i/glibc-2.23/misc/init-misc.c
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_atexit.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strlen.S
+  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/wordsize-64/mmap.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-irel.h
+  /build/glibc-t3gR2i/glibc-2.23/elf/rtld.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-debug.c
+  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/x86/sysconf.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-error.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy.S
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_pow.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/setup-vdso.h
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/memchr.S
+  /build/glibc-t3gR2i/glibc-2.23/csu/../csu/init-first.c
+  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/syscall-template.S
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memcmp.S
+  /build/glibc-t3gR2i/glibc-2.23/setjmp/sigjmp.c
+  /build/glibc-t3gR2i/glibc-2.23/malloc/malloc.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/iofwrite.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memset.S
+  /build/glibc-t3gR2i/glibc-2.23/stdio-common/_itoa.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strrchr.S
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/strchr.S
+  /build/glibc-t3gR2i/glibc-2.23/debug/../libio/libioP.h
+  /build/glibc-t3gR2i/glibc-2.23/libio/strops.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/posix/dl-fileid.h
+  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/posix/sysconf.c
+  /build/glibc-t3gR2i/glibc-2.23/math/w_pow.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strspn.S
+  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/sysv/linux/wordsize-64/xstat.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-lookup.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-machine.h
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-hwcaps.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S
+  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/getsysstats.c
+  /build/glibc-t3gR2i/glibc-2.23/stdio-common/printf-parse.h
+  /build/glibc-t3gR2i/glibc-2.23/setjmp/../sysdeps/x86_64/bsd-_setjmp.S
+  /build/glibc-t3gR2i/glibc-2.23/libio/iofgets.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../elf/dl-runtime.c
+  /build/glibc-t3gR2i/glibc-2.23/stdio-common/vfprintf.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-fini.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../strchr.S
+  /build/glibc-t3gR2i/glibc-2.23/debug/vsprintf_chk.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/iogetline.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86/cpu-features.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_floorf.S
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-cache.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_exp.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-addr.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-init.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/memcpy.S
+  /build/glibc-t3gR2i/glibc-2.23/string/../string/strstr.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-version.c
+  /build/glibc-t3gR2i/glibc-2.23/misc/sbrk.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-deps.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/get-dynamic-info.h
+  /build/glibc-t3gR2i/glibc-2.23/libio/iofopen.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_asin.c
+  /build/glibc-t3gR2i/glibc-2.23/misc/../sysdeps/unix/sysv/linux/getpagesize.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/e_pow.c
+  /build/glibc-t3gR2i/glibc-2.23/setjmp/../sysdeps/x86_64/setjmp.S
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/exit.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/i386/fpu/fenv_private.h
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memset.S
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-open.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../strcmp.S
+  /build/glibc-t3gR2i/glibc-2.23/ctype/ctype-info.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/memset-avx2.S
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/ieee754/dbl-64/e_atan2.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/do-rel.h
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcspn.S
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_rint.S
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/../stdlib/strtol.c
+  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/gettimeofday.c
+  /build/glibc-t3gR2i/glibc-2.23/math/w_atan2.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/genops.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/iofclose.c
+  /build/glibc-t3gR2i/glibc-2.23/malloc/hooks.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-object.c
+  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/syscall-template.S
+  /build/glibc-t3gR2i/glibc-2.23/csu/../sysdeps/generic/dl-hash.h
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_sin.c
+  /build/glibc-t3gR2i/glibc-2.23/debug/fprintf_chk.c
+  /build/glibc-t3gR2i/glibc-2.23/malloc/arena.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-misc.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../misc/sbrk.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/generic/math_private.h
+  /build/glibc-t3gR2i/glibc-2.23/string/strdup.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/fileops.c
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/../stdlib/strtol_l.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/x86_64/dl-trampoline.h
+  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/_exit.c
+  /build/glibc-t3gR2i/glibc-2.23/nptl/unregister-atfork.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-tls.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-minimal.c
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/strcmp.S
+  /build/glibc-t3gR2i/glibc-2.23/io/../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_thread_atexit_impl.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-reloc.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_floor.S
+  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/unix/sysv/linux/x86/time.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/libioP.h
+  /build/glibc-t3gR2i/glibc-2.23/csu/../csu/libc-start.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../elf/dl-sysdep.c
+  /build/glibc-t3gR2i/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_rintf.S
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/msort.c
+  /build/glibc-t3gR2i/glibc-2.23/stdlib/cxa_finalize.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-vdso.c
+  /build/glibc-t3gR2i/glibc-2.23/time/../sysdeps/generic/dl-hash.h
+  /build/glibc-t3gR2i/glibc-2.23/string/../sysdeps/x86_64/multiarch/../memcpy.S
+  /build/glibc-t3gR2i/glibc-2.23/posix/../sysdeps/unix/sysv/linux/x86/../sysconf.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-environ.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/./dl-map-segments.h
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-osinfo.h
+  /build/glibc-t3gR2i/glibc-2.23/elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-load.c
+  /build/glibc-t3gR2i/glibc-2.23/elf/dl-altinit.c
+  /build/glibc-t3gR2i/glibc-2.23/libio/iofread.c
+  /build/glibc-t3gR2i/glibc-2.23/debug/sprintf_chk.c
+
+--------------------------------------------------------------------------------
+Ir 
+--------------------------------------------------------------------------------
+90  percentage of events annotated
+
