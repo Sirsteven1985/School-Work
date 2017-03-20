@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         for (int j = 0; j < wide; j++)
             {
 
-                    printf("address->  %p \n", &array1[i][j]);
+                    printf("array1[%i][%i] address->  %p \n",i,j, &array1[i][j]);
 
             }
         }
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
             {
            for (int h = 0; h < hyte; h++)
                 {
-                    printf("address->  %p \n", &array2[i][j][h]);
+                    printf("array2[%i][%i][%i] address->  %p \n",i,j,h, &array2[i][h][j]);
                 }
             }
         }
