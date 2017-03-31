@@ -1,0 +1,5 @@
+*check others' contributions to the source code
+*revert to an older "working" version
+*work on a piece of code concurrently with others
+*you can view recent changes to the code
+*you can also see who supplied the changes to the code
