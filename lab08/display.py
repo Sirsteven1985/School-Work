@@ -73,7 +73,6 @@ print("Preparing to download object from http://" + host + path + filename)
 # STUDENT WORK: 
 #  (1) Build the HTTP request string to send to the server
 #      and *print it* on the screen.
-#
 #      Requirements:
 #        HTTP 1.1
 #        Use the Host header
@@ -84,22 +83,51 @@ print("Preparing to download object from http://" + host + path + filename)
 #      to the server? (otherwise, the server won't begin processing)
 # *****************************
 
+request = 'GET {path}{filename} HTTP/1.1\r\nHost: {host}\r\nConnection: close\r\n\r\n'.format(path=path,filename=filename, host=host)
 
-
-
+print(request)
 # *****************************
 # STUDENT WORK: 
 #  (2) Create a TCP socket (SOCK_STREAM)
+# Create TCP socket
+try:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+except socket.error as msg:
+    print("Error: could not create socket")
+    print("Description: " + str(msg))
+    sys.exit()
+
+
 #  (3) Connect to the remote host using the socket
+
+try:
+    s.connect((host, port))
+except socket.error as msg:
+    print("Error: Could not open connection")
+    print("Description: " + str(msg))
+    sys.exit()
+
+print("Connection established")
 #  (4) Send the HTTP request to the remote host.
 #      Tip: Look at the demo client program to see how
 #      to convert a unicode string to a byte array
 #      prior to transmitting it.
 # *****************************
 
+string_unicode = request
+raw_bytes = bytes(string_unicode, 'ascii')
 
+try:
+    # Send the string
+    # Note: send() might not send all the bytes!
+    # You should loop, or use sendall()
+    bytes_sent = s.send(raw_bytes)
+except socket.error as msg:
+    print("Error: send() failed")
+    print("Description: " + str(msg))
+    sys.exit()
 
-
+print("Sent %d bytes to server" % bytes_sent)
 
 
 # *****************************
@@ -112,13 +140,30 @@ print("Preparing to download object from http://" + host + path + filename)
 #      (i.e. no bytes received)
 #  (6) Close the socket - finished with the network now
 # *****************************
+try:
+    Total_bytes = bytes('','ascii')
+    raw_bytes = s.recv(max_recv)
+    Total_bytes = raw_bytes
+    while len(raw_bytes) != 0:
+    	raw_bytes = s.recv(max_recv)
+    	Total_bytes += raw_bytes	
+except socket.error as msg:
+    print("Error: unable to recv()")
+    print("Description: " + str(msg))
+    sys.exit()
 
+string_unicode = raw_bytes.decode('ascii')
+print("Received %d bytes from client" % len(raw_bytes))
+print("Message contents: %s" % string_unicode)
 
+try:
+    s.close()
+except socket.error as msg:
+    print("Error: unable to close() socket")
+    print("Description: " + str(msg))
+    sys.exit()
 
-
-
-
-
+print("Sockets closed, now exiting")
 # *****************************
 # STUDENT WORK: 
 #  (7) Split the response into two parts:
@@ -129,8 +174,18 @@ print("Preparing to download object from http://" + host + path + filename)
 #      in the /tmp directory would be a great spot.
 # *****************************
 
+sHeader,sData = Total_bytes.split(b"\r\n\r\n",1)
+print("Header\r\n")
+string_unicode = sHeader.decode('ascii')
+print(string_unicode)
 
+saved_filename = ('/tmp/' + filename)
 
+data = open(saved_filename,'w+b')
+
+data.write(sData)
+data.read()
+data.close()
 
 
 # *****************************
@@ -141,3 +196,4 @@ print("Preparing to download object from http://" + host + path + filename)
 # in the variable 'saved_filename', use the 'eog' utility to 
 # display the image on screen
 call(["eog", saved_filename])
+
