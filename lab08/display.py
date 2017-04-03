@@ -145,8 +145,8 @@ try:
     raw_bytes = s.recv(max_recv)
     Total_bytes = raw_bytes
     while len(raw_bytes) != 0:
-    	raw_bytes = s.recv(max_recv)
-    	Total_bytes += raw_bytes	
+        raw_bytes = s.recv(max_recv)
+        Total_bytes += raw_bytes
 except socket.error as msg:
     print("Error: unable to recv()")
     print("Description: " + str(msg))
