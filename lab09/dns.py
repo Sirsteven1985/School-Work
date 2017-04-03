@@ -73,7 +73,7 @@ def main():
 
 
     bitfields = dns_header_bitfields()
-    messageID = random.getrandbits(16)
+    messageID = random.getrandbits(8)+random.getrandbits(8)
     bitfields.qr = 1
     bitfields.opcode = 0
     bitfields.aa = 0
