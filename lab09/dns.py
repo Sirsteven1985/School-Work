@@ -84,7 +84,7 @@ def main():
     bitfields.rcode = 0
 
     qdcount = 1
-    ancount = 1
+    ancount = 0
     nscount = 0
     arcount = 0
 
@@ -137,27 +137,12 @@ def main():
     # ---------
     max_recv = 4096
 
-    #(raw_bytes, src_addr) = s.recvfrom(max_bytes)
-
-   # print(raw_bytes)
-
-
     try:
-        Total_bytes = bytes('', 'ascii')
-        raw_bytes = s.recvfrom(max_recv)
-        Total_bytes = raw_bytes
-        while len(raw_bytes) != 0:
-            raw_bytes = s.recv(max_recv)
-            Total_bytes += raw_bytes
+       	(raw_bytes, src_addr) = s.recvfrom(max_recv)
     except socket.error as msg:
         print("Error: unable to recv()")
         print("Description: " + str(msg))
         sys.exit()
-
-
-    string_unicode = raw_bytes.decode('ascii')
-    print("Received %d bytes from client" % len(raw_bytes))
-    print("Message contents: %s" % string_unicode)
 
 
     # Close socket
