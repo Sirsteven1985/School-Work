@@ -74,12 +74,12 @@ def main():
 
     bitfields = dns_header_bitfields()
     messageID = random.getrandbits(8)+random.getrandbits(8)
-    bitfields.qr = 1
+    bitfields.qr = 0
     bitfields.opcode = 0
     bitfields.aa = 0
     bitfields.tc = 0
     bitfields.rd = 1
-    bitfields.ra = 1
+    bitfields.ra = 0
     bitfields.reserved = 0
     bitfields.rcode = 0
 
@@ -114,8 +114,7 @@ def main():
     request += struct.pack('!H2sHHHH', messageID, bytes(bitfields), qdcount, ancount, nscount, arcount)
 
     request += question + zero_byte + qlast
-    print("REQUEST: ", request)
-
+    print("Sending request for",qname,", type",qtype,", to server",server_ip,", port",port)
 
     # Send request message to server
     # (Tip: Use sendto() function for UDP)
@@ -129,7 +128,6 @@ def main():
         print("Description: " + str(msg))
         sys.exit()
 
-    print("Sent %d bytes to server" % bytes_sent)
     # Receive message from server
     # (Tip: use recvfrom() function for UDP)
     # ---------
@@ -155,8 +153,6 @@ def main():
         print("Error: unable to close() socket")
         print("Description: " + str(msg))
         sys.exit()
-
-    print("Sockets closed, now exiting")
 
     # Decode DNS message and display to screen
     dns.decode_dns(raw_bytes)
