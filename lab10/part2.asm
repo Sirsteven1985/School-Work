@@ -60,5 +60,5 @@ end: 	sw $t4, Z
 	
 A:	.word 10
 B:	.word 15
-C:	.word 4
+C:	.word 6
 Z:	.word 0

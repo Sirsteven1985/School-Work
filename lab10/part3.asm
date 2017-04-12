@@ -32,7 +32,6 @@ while:
    	sub $t1, $t1, 1   	#subtracts i so --i
    	bgt $t1, 0, while 	#end whileloop
    	
-   	
 	sw $t2, Z
 	sw $t1, i
 
