@@ -15,7 +15,7 @@
 // Global values for random number generator.
 // Initialize the random number generator with fixed values
 // for demonstration purposes.
-uint32_t m_w = 50000;
+uint32_t m_w = 50000; // 4 byte unsigned int
 uint32_t m_z = 60000;
 
 int main()
