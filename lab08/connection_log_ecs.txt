@@ -1,0 +1,765 @@
+Script started on Sun 26 Mar 2017 09:33:22 AM PDT
+^[[F    GET /ecpe-170/lab/ HTTP/1.1
+Host: ecs-network.serv.pacific.edu
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Sun, 26 Mar 2017 16:33:53 GMT
+Server: Zope/(2.13.24, python 2.6.5, linux2) ZServer/1.1
+Content-Length: 24230
+X-Cache-Operation: plone.app.caching.weakCaching
+X-RAMCache: plone.app.caching.operations.ramcache
+Content-Language: en
+Expires: Thu, 29 Mar 2007 16:21:52 GMT
+ETag: "||30324|en|0|Sunburst Theme|0|1444436487.33"
+X-Ua-Compatible: IE=edge,chrome=1
+Cache-Control: max-age=0, must-revalidate, private
+X-Cache-Rule: plone.content.itemView
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html;charset=utf-8
+Vary: Accept-Encoding
+Connection: close
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+    
+    
+    
+    
+    
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+        <base href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/labs" /><!--[if lt IE 7]></base><![endif]-->
+    
+
+    
+        
+
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="http://ecs-network.serv.pacific.edu/portal_css/Sunburst%20Theme/reset-cachekey-98ff9e8df1b4fd171b62e48ffc65224f.css" />
+    <link rel="stylesheet" type="text/css" href="http://ecs-network.serv.pacific.edu/portal_css/Sunburst%20Theme/base-cachekey-803ad09633d08acda5752564121f4b50.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://ecs-network.serv.pacific.edu/portal_css/Sunburst%20Theme/ploneCustom-cachekey-8c9f97440082c6d2229c29664804ef20.css" />
+
+  
+  
+    <script type="text/javascript" src="http://ecs-network.serv.pacific.edu/portal_javascripts/Sunburst%20Theme/resourceplone.app.jquery-cachekey-a341ea3d731b88c9fd863112717f2bd2.js"></script>
+    <script type="text/javascript" src="http://ecs-network.serv.pacific.edu/portal_javascripts/Sunburst%20Theme/kss-bbb-cachekey-24af0b5057943fbc4aea189df4d79398.js"></script>
+
+
+<title>Labs &mdash; ECS Networking</title>
+        
+    <link rel="canonical" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://ecs-network.serv.pacific.edu/favicon.ico" />
+    <link rel="apple-touch-icon" href="http://ecs-network.serv.pacific.edu/touch_icon.png" />
+
+
+
+
+
+
+    <link rel="search" href="http://ecs-network.serv.pacific.edu/@@search" title="Search this site" />
+
+
+
+        
+        
+        
+        
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
+        <meta name="generator" content="Plone - http://plone.org" />
+    
+</head>
+
+<body class="template-document_view portaltype-document site-networking section-ecpe-170 subsection-lab subsection-lab-labs icons-on userrole-anonymous" dir="ltr">
+
+<div id="visual-portal-wrapper">
+
+        <div id="portal-top" class="row">
+<div class="cell width-full position-0">
+            <div id="portal-header">
+    <p class="hiddenStructure">
+  <a accesskey="2" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/#content">Skip to content.</a> |
+
+  <a accesskey="6" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/#portal-globalnav">Skip to navigation</a>
+</p>
+
+<div id="portal-personaltools-wrapper">
+
+<p class="hiddenStructure">Personal tools</p>
+
+
+
+<ul class="actionMenu deactivated" id="portal-personaltools">
+  <li id="anon-personalbar">
+    
+        <a href="http://ecs-network.serv.pacific.edu/login" id="personaltools-login">Log in</a>
+    
+  </li>
+</ul>
+
+</div>
+
+
+
+<div id="portal-searchbox">
+
+    <form id="searchGadget_form" action="http://ecs-network.serv.pacific.edu/@@search">
+
+        <div class="LSBox">
+        <label class="hiddenStructure" for="searchGadget">Search Site</label>
+
+        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="Search" />
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/networking/ecpe-170/lab" />
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://ecs-network.serv.pacific.edu/@@search" accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+<a id="portal-logo" title="ECS Networking" accesskey="1" href="http://ecs-network.serv.pacific.edu">
+    <img src="http://ecs-network.serv.pacific.edu/logo.png" alt="ECS Networking" title="ECS Networking" height="56" width="192" /></a>
+
+
+    <p class="hiddenStructure">Navigation</p>
+
+    <ul id="portal-globalnav"><li id="portaltab-index_html" class="plain"><a href="http://ecs-network.serv.pacific.edu" title="">Home</a></li><li id="portaltab-ecpe-170" class="selected"><a href="http://ecs-network.serv.pacific.edu/ecpe-170" title="">ECPE 170</a></li><li id="portaltab-cluster" class="plain"><a href="http://ecs-network.serv.pacific.edu/cluster" title="">Cluster</a></li><li id="portaltab-past-courses" class="plain"><a href="http://ecs-network.serv.pacific.edu/past-courses" title="">Past Courses</a></li><li id="portaltab-research" class="plain"><a href="http://ecs-network.serv.pacific.edu/research" title="">Research</a></li><li id="portaltab-contact-info-1" class="plain"><a href="http://ecs-network.serv.pacific.edu/contact-info-1" title="">Contact Info</a></li></ul>
+
+
+</div>
+
+</div>
+        </div>
+    <div id="portal-columns" class="row">
+
+        <div id="portal-column-content" class="cell width-3:4 position-1:4">
+
+            <div id="viewlet-above-content"><div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <span id="breadcrumbs-home">
+        <a href="http://ecs-network.serv.pacific.edu">Home</a>
+        <span class="breadcrumbSeparator">
+            /
+            
+        </span>
+    </span>
+    <span id="breadcrumbs-1" dir="ltr">
+        
+            <a href="http://ecs-network.serv.pacific.edu/ecpe-170">ECPE 170</a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-2" dir="ltr">
+        
+            
+            
+            <span id="breadcrumbs-current">Labs</span>
+         
+    </span>
+
+</div>
+</div>
+
+            
+                <div class="">
+
+                    
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                        <div id="content">
+
+                            
+
+                            
+
+                             <div id="viewlet-above-content-title"></div>
+                             
+                                 
+                                 
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Labs
+                </h1>
+            
+            
+        
+                             
+                             <div id="viewlet-below-content-title">
+</div>
+
+                             
+                                 
+                                 
+            
+                
+            
+            
+        
+                             
+
+                             <div id="viewlet-above-content-body">
+
+</div>
+                             <div id="content-core">
+                                 
+    
+        
+        <div class="" id="parent-fieldname-text-eb4015c603cb4d9fbd1cb13de7323c01">
+            <p>This course is organized around 12 in-class labs on varying topics.</p>
+<p><strong>Lab Reports:</strong></p>
+<p><strong></strong>Each lab requires you to write a lab report that answers key questions as you work through the lab. These reports should follow the format of the <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab_report_template.odt" class="internal-link"><strong>LibreOffice template</strong></a> provided here. Answers to most lab questions can be short; a few sentences is generally sufficient.</p>
+<p>The first lab (and only the first lab!) will be submitted via the Canvas site. For all other labs, everything (programs source code, lab reports, etc...) must be checked into the corresponding lab directory in version control and pushed to the online repository.</p>
+<p><strong>Lab Reports must be </strong><strong>submitted in </strong><strong>PDF format</strong>, not as LibreOffice files (Choose File-&gt;Export as PDF).  Documents not in PDF format will be returned ungraded.</p>
+<ul>
+<ul></ul>
+</ul>
+<p><strong>Deadlines:</strong></p>
+<p>Pre-Lab checkpoints are due at the <strong>beginning of class</strong> of the corresponding lab. A "checkpoint" is simply a quick verification that the requested activity was complete. Detailed grading will be done when the full lab report is submitted.</p>
+<p>The full Lab Report is due by <strong>5:00am</strong> on the dates listed in the table below. <em>(The intent is that you finish it up at your leisure the night before, rather than waiting till the last second and submitting it at 4:59am...)</em></p>
+<ul></ul>
+<p><strong>Grading:</strong></p>
+<p>To account for the varying amount of work required, each lab is worth a different point amount, as listed in the table below.</p>
+<ul></ul>
+<p> </p>
+<table class="grid listing">
+<tbody>
+<tr><th>Lab #</th><th style="text-align: center; ">Topic</th><th style="text-align: center; ">Lab Start Date</th><th style="text-align: center; ">Lab Report Due Date</th><th style="text-align: center; ">Points Per Problem</th><th style="text-align: center; ">Pre-Lab Points</th><th style="text-align: center; ">Lab Points</th></tr>
+<tr>
+<td><strong>1</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-linux" class="internal-link">Linux Basics</a></td>
+<td style="text-align: center; ">Jan 24th, 2017</td>
+<td style="text-align: center; ">Jan 28th, 2017 by 5am</td>
+<td style="text-align: center; "><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-1/view" class="internal-link">Rubric</a></td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-version-control" class="internal-link">Version Control</a></td>
+<td style="text-align: center; "><span>Jan 26th, 2017</span></td>
+<td style="text-align: center; "><span><span><span>Jan 30th, 2017 </span>by 5am</span></span></td>
+<td style="text-align: center; "><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-2/view" class="internal-link">Rubric</a></td>
+<td>15</td>
+<td>45</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-c-programming" class="internal-link">C Programming <br /></a><br />(Language, Tools, and Makefiles)</td>
+<td style="text-align: center; "><span>Jan 31st, 2017</span></td>
+<td style="text-align: center; "><span><span><span>Feb 6th, 2017</span> by 5am</span></span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-3/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td>70</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-c-programming-project" class="internal-link">C Programming Project</a></td>
+<td style="text-align: center; "><span>Feb 7th, 2017</span></td>
+<td style="text-align: center; "><span><span>Feb 20th, 2017 by 5am</span></span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-4/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>150</span></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-measurement" class="internal-link">Performance Measurement</a></td>
+<td style="text-align: center; "><span>Feb 14th, 2017</span></td>
+<td style="text-align: center; "><span>Feb 27th, 2017</span><span> by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-5/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>130</span></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-optim" class="internal-link">Performance Optimization</a><br />(Compilers and programmer techniques)</td>
+<td style="text-align: center; "><span>Feb 21st, 2017</span></td>
+<td style="text-align: center; "><span>Mar 6th, 2017 by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-6/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>150</span></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-optim-memory" class="internal-link">Performance Optimization</a><br /><span>(Memory Hierarchy)</span></td>
+<td style="text-align: center; "><span>Feb 28th, 2017</span></td>
+<td style="text-align: center; "><span>Mar 20th, 2017 by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-7/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>160</span></td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-network-basic" class="internal-link" target="_self">Network Socket Programming<br />(Basic) </a></td>
+<td style="text-align: center; "><span>Mar 21st, 2017</span></td>
+<td style="text-align: center; "><span>Mar 27th, 2017 by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-8/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>120</span></td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-network-inter" class="internal-link" target="_self"><span>Network Socket Programming</span><br /><span>(Intermediate)</span></a></td>
+<td style="text-align: center; "><span>Mar 28th, 2017</span></td>
+<td style="text-align: center; "><span>Apr 3rd, 2017 by 5am<br /></span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-9/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>120</span></td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-mips-basic" class="internal-link">MIPS Assembly Programming<br />(Basic)</a></td>
+<td style="text-align: center; "><span>Apr 6th, 2017</span></td>
+<td style="text-align: center; "><span>Apr 12th, 2017 by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-10/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td>125</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-mips-intermediate" class="internal-link" target="_self"><span>MIPS Assembly Programming</span><br /><span>(Intermediate)</span></a></td>
+<td style="text-align: center; "><span>Apr 13th, 2017</span></td>
+<td style="text-align: center; "><span>Apr 19th, 2017 by 5am</span></td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/rubriclab11.txt" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>135</span></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-mips-advanced" class="internal-link" target="_self">MIPS Assembly Programming<br />(Advanced)</a> </td>
+<td style="text-align: center; "><span>Apr 20th, 2017</span></td>
+<td style="text-align: center; ">May 3rd, 2017 by 5am</td>
+<td style="text-align: center; "><a title="" href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/grading-rubric-lab-12/view" class="internal-link" target="_self">Rubric</a></td>
+<td>-</td>
+<td><span>135</span></td>
+</tr>
+</tbody>
+</table>
+            
+        </div>
+    
+    
+
+                             </div>
+                             <div id="viewlet-below-content-body">
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+</div>
+
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            
+
+            <div id="viewlet-below-content">
+
+
+
+
+
+</div>
+        </div>
+
+        
+        <div id="portal-column-one" class="cell width-1:4 position-0">
+            
+                
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6e6574776f726b696e670a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6e6574776f726b696e670a6e617669676174696f6e">
+<dl class="portlet portletNavigationTree">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <a href="http://ecs-network.serv.pacific.edu/sitemap" class="tile">Contents</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem lastItem">
+        <ul class="navTree navTreeLevel0">
+            
+            
+
+
+
+<li class="navTreeItem visualNoMarker section-syllabus">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/syllabus" class="state-published contenttype-document" title="">
+            
+            <span>Syllabus</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-schedule">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/schedule" class="state-published contenttype-document" title="">
+            
+            <span>Schedule</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-resources">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/resources" class="state-published contenttype-document" title="">
+            
+            <span>Resources</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeFolderish section-lab">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab" class="state-published navTreeCurrentItem navTreeCurrentNode navTreeFolderish contenttype-folder" title="">
+            
+            <span>Labs</span>
+        </a>
+
+        
+            <ul class="navTree navTreeLevel1">
+                
+
+
+
+<li class="navTreeItem visualNoMarker section-lab-linux">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-linux" class="state-published contenttype-document" title="">
+            
+            <span>Lab 1: Linux Basics</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-version-control">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-version-control" class="state-published contenttype-document" title="">
+            
+            <span>Lab 2: Version Control</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-c-programming">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-c-programming" class="state-published contenttype-document" title="">
+            
+            <span>Lab 3: C Programming (Language, Toolchain, and Makefiles)</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-c-programming-project">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-c-programming-project" class="state-published contenttype-document" title="">
+            
+            <span>Lab 4: C Programming Project</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-perf-measurement">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-measurement" class="state-published contenttype-document" title="">
+            
+            <span>Lab 5: Performance Measurement</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-perf-optim">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-optim" class="state-published contenttype-document" title="">
+            
+            <span>Lab 6: Performance Optimization</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-perf-optim-memory">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-perf-optim-memory" class="state-published contenttype-document" title="">
+            
+            <span>Lab 7: Performance Optimization (Memory Hierarchy)</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-network-basic">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-network-basic" class="state-published contenttype-document" title="">
+            
+            <span>Lab 8: Network Socket Programming (Basic)</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab-network-inter">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab-network-inter" class="state-published contenttype-document" title="">
+            
+            <span>Lab 9: Network Socket Programming (Intermediate)</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-lab_report_template-odt">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/lab/lab_report_template.odt/view" class="state-missing-value contenttype-file" title="">
+            <img width="16" height="16" src="http://ecs-network.serv.pacific.edu/application.png" alt="File ODT document" />
+            <span>Lab Report Template</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+
+
+            </ul>
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-tutorials">
+
+    
+
+
+        <a href="http://ecs-network.serv.pacific.edu/ecpe-170/tutorials" class="state-published navTreeFolderish contenttype-folder" title="">
+            
+            <span>Tutorials</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+
+
+        </ul>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+
+</div>
+
+
+
+
+            
+        </div>
+
+        
+        
+    </div>
+
+
+    <div id="portal-footer-wrapper" class="row">
+        <div class="cell width-full position-0">
+            <div class="row">
+    <div class="cell width-full position-0">
+
+        <div id="portal-footer">
+            <p>
+
+
+<acronym title="Copyright">&copy;</acronym>
+2017
+
+<a href="http://www.pacific.edu/">University of the Pacific</a>, School of Engineering and Computer Science
+
+            </p>
+        </div>
+
+    </div>
+</div>
+<div id="portal-colophon">
+<div class="colophonWrapper">
+<ul>
+  <li>
+    <a href="http://plone.org" title="This site was built using the Plone Open Source CMS/WCM.">
+      Powered by Plone &amp; Python</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a href="http://ecs-network.serv.pacific.edu/sitemap" accesskey="3" title="Site Map">Site Map</a></li>
+    <li id="siteaction-accessibility"><a href="http://ecs-network.serv.pacific.edu/accessibility-info" accesskey="0" title="Accessibility">Accessibility</a></li>
+    <li id="siteaction-contact"><a href="http://ecs-network.serv.pacific.edu/contact-info" accesskey="9" title="Contact">Contact</a></li>
+</ul>
+
+<!-- BEGIN Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68687219-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- END Google Analytics -->
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
+
+
+
+
+Script done on Sun 26 Mar 2017 09:33:54 AM PDT
