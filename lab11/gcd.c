@@ -20,7 +20,7 @@ uint32_t m_z = 60000;
 
 int main()
 {
-  uint32_t a, b;
+  uint32_t a, b; 
 
   for(int i=0; i<10; i++)
     {
