@@ -10,119 +10,156 @@
 
 # The label 'main' represents the starting point
 main:
-    	lw $t0, a		# loads in a value into temp reg $t0
-    	lw $t1, b 		# loads in b value into temp reg $t1
-    	lw $t3, i		# loads in i value into temp reg $t3
-    	
-	li $v0, 4 		# code for syscall: print_string
-	la $a0, msg		# pointer to string of msg to $a0
-	syscall
-	li $v0, 8 		# code for syscall: read_string
-	la $a0, string 		# loading address of user string into $a0
-	li $a1, 256 		# reads in 256 character string
-	syscall 
-	la $t0, string 		# loads address of user string array into $t0
-	la $t1, end		# address of end(NULL pointer) into $t1
-while: 
-	lb $t2, 0($t0) 		# byte of first element into $t2
-	beqz $t2, NULL 		# if array is NULL, goes to NULL 
-	beq $t2,'e', find_e 	# byte at $t2 equal to e, branch to find_e 
-	addi $t3, $t3, 1 	# increments i++ 
-	add $t0, $t0, 1		# increments array++ 
-	j while 		# jumps back into while loop
+    	lw $s0, A		# loads in a value into temp reg $s0
+    	lw $s1, B 		# loads in b value into temp reg $s1
+    	lw $s3, i		# loads in i value into temp reg $s3
+ 	lw $s2, z		# loads in z value into temp reg $s2
+ 	lw $s4, w		# loads in w value into temp reg $s4
 
 f_loop:
+
+	bge $s3, 10, done 	# if i >=10 break out of for loop
+	li $a0, 1		# 1 as first argument
+	li $a1, 100000		# 100000 as 2nd argument
 	
-	addi $t3, $t3, 1 	# increments i++ 
+	jal random_in_range	# function call random_in_range for A
+	move $s0, $v0		# move return value into $s0 = A
 	
-find_e: 
-	sw $t2, end 		# storing resulting character 
-	j if 			# jumps to if 
-if: 
-	lw $t4, end 		# load result to $t4
-	beq $t4, $0, NULL 	# if pointer is NULL, then branch to NULL
+	li $a0, 1		# 1 as first argument
+	li $a1, 100000		# 100000 as 2nd argument
+	
+	jal random_in_range	# function call random_in_range for B
+	move $s1, $v0		# move return value into $s1 = B
+		
+	li $v0, 4 		# message is printed
+	la $a0, msg 		# load msg into $a0
+	syscall			# prints "GCD ("
+	
+	move $a0, $s0		# load address of a into $a0
+	li $v0, 1 		# prints "A" Value
+	syscall			 
+	
 	li $v0, 4 		# message is printed 
-	la $a0, msg1 		# load msg1 into $a0 
-	syscall 
-	move $a0, $t0 		# load address of array into $a0 
-	li $v0, 1 		# prints integer 
-	syscall
-	li $v0, 4 		# message printed 
-	la $a0, msg2 		# load address of msg2 to $a0 
-	syscall 
-	la $a0, 0($t4) 		# load address $a0 
-	li $v0, 11 		# prints character 'e'
-	syscall
-	j done			# jumps to end of program
-NULL: 
-	li $v0, 4 		# allows a message to be printed 
-	la $a0, msg3 		# loading address of msg3 into $a0 
-	syscall 
-	j done			# jumps to end of program
+	la $a0, msg1 		# load msg1 into $a0
+	syscall			# prints ","
 	
-gcd:				# GCD of two numbers (a($t0), b($t1)) using recursive Euclid method
-	divu $t0, $t3		# i($t0) mod 2($t3)
-	mfhi $t6      	  	# temp for the mod stored in ($t6)
-	beq $t6, 0, Lmod   	# if mod == 0, jump over to L1
-	add $t2, $t2, $t0  	# k = k + i
+	move $a0, $s1		# load address of b into $a0 
+	li $v0, 1 		# prints "B" Value 
+	syscall			
 	
-GCD:			# get random function returns random number
-	addi $sp, $sp, -4	#
-	sw $s0, 0($sp)		#
-	addi $sp, $sp, -4	#
-	sw $s1, 0($sp)		#
-	addi $sp, $sp, -4	#
-	sw $ra, 0($sp)		#
+	li $v0, 4 		# message is printed 
+	la $a0, msg2 		# load msg1 into $a0
+	syscall			# prints ") = "
+	
+	move $a0, $s0		# A is first argument
+	move $a1, $s1		# B is first argument
+	jal GCD			# function call for gcd
+	move $s5, $v0		# move return value into $s5
+	
+	move $a0, $s5		# load address of gcd(a,b) into $a0 
+	li $v0, 1 		# prints "gcd(a,b)" value 
+	syscall
+	
+	li $v0, 4 		# message is printed 
+	la $a0, msg3 		# load msg1 into $a0
+	syscall			# prints ") = "
+	
+	addi $s3, $s3, 1 	# increments i++ 
+	
+	j f_loop		# Jumps back into for loop
+	
+random_in_range:
+
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $s0, 0($sp)		# Save $s0 to stack
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $s1, 0($sp)		# Save $s1 to stack
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $s2, 0($sp)		# Save $s2 to stack
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $ra, 0($sp)		# Save $ra to stack
 	
 
-	lw $s0, a		#
-	lw $s1, b		#
+	move $s0, $a0		# low value 1
+	move $s1, $a1		# high value 100000
 	
-	and $t3, $s0, $t2	#
-	mul $t3, $t0, $t3	#
-	srl $t4, $s0, 16	#
-	addu $s0, $t3, $t4	#
-	sw$s0, z		#
+	subu $t2, $s1, $s0	# high - low
+	addiu $t2, $t2, 1	# high - low + 1 to $t2 = range
 	
-	sll $t3, $s0, 16	# z<<16
-	addu $t3, $t3, $s1	#
+	jal get_random		# get_random call
+	move $s2, $v0		# return value in $s2 rand_num
+
+	divu $s2, $t2		# Mod rand_num % range
+	mfhi $t4		# Mod value saved to $t4
+	addu $t4, $t4, $s0	# (rand_num % range) + low
 	
-	move $v0, $t3		#
+	move $v0, $t4		# return $t4
 	
-	lw $ra, 0($sp)		#
-	addi $sp, $sp, 4	#
-	lw $s1, 0($sp)		#
-	addi $sp, $sp, 4	#
-	lw $s0, 0($sp)		#
-	addi $sp, $sp, 4	#
+	lw $ra, 0($sp)		# Restore $ra to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
+	lw $s2, 0($sp)		# Restore $s2 to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
+	lw $s1, 0($sp)		# Restore $s1 to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
+	lw $s0, 0($sp)		# Restore $s0 to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
 	
-	jr $ra	
+	jr $ra			# return value
+		
+GCD:				# get random function returns random number
 	
+
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $ra, 0($sp)		# Save $ra
+	
+
+	move $t0, $a0		# $t0 holds A
+	move $t1, $a1		# $t1 holds B
+	
+	divu $t0, $t1		# Mod A % B
+	mfhi $t5   		# store modulus in temp
+
+	beq $t5, 0, Help 	# if mod == 0, jump over to not sure if right?
+	move $a0, $t1		# New A = B
+	move $a1, $t5		# New B = (A % B)
+	
+	j GCD
+			
+Help:	
+	move $v0, $t1		# return b
+	
+	
+	lw $ra, 0($sp)		# Restore $ra
+	addi $sp, $sp, 4	# Adjust stack pointer
+
+	
+	
+	jr $ra			#return value
 	 			
 get_random:			# get random function returns random number
 
-	addi $sp, $sp, -4	#
-	sw $s0, 0($sp)		#
-	addi $sp, $sp, -4	#
-	sw $s1, 0($sp)		#
-	addi $sp, $sp, -4	#
-	sw $ra, 0($sp)		#
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $s0, 0($sp)		# Save $s0 to stack
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $s1, 0($sp)		# Save $s1 to stack
+	addi $sp, $sp, -4	# Adjust stack pointer
+	sw $ra, 0($sp)		# Save $ra to stack
 	
-	li $t0, 36969		# load integer 36969 into temp reg $t0
-	li $t1, 18000		# load integer 18000 into temp reg $t1
-	li $t2, 65535		# load integer 65535 into temp reg $t2
+	li $t5, 36969		# load integer 36969 into temp reg $t0
+	li $t6, 18000		# load integer 18000 into temp reg $t1
+	li $t7, 65535		# load integer 65535 into temp reg $t2
 	
 	lw $s0, z		# load word z into reg $s0
 	lw $s1, w		# load word w into reg $s1
 	
-	and $t3, $s0, $t2	# m_z & 65535
-	mul $t3, $t0, $t3	# 36969 * (m_z & 65535)
+	and $t3, $s0, $t7	# m_z & 65535
+	mul $t3, $t5, $t3	# 36969 * (m_z & 65535)
 	srl $t4, $s0, 16	# m_z >> 16
 	addu $s0, $t3, $t4	# add unsigned (36969 * (m_z & 65535))   +   (m_z >> 16);
 	sw $s0, z		#
 	
-	and $t3, $s1, $t2	# m_w & 65535
-	mul $t3, $t1, $t3	# 18000 * (m_w & 65535)
+	and $t3, $s1, $t7	# m_w & 65535
+	mul $t3, $t6, $t3	# 18000 * (m_w & 65535)
 	srl $t4, $s1, 16	# m_w >> 16
 	addu $s1, $t3, $t4	# add unsigned (18000 * (m_w & 65535))   +   (m_w >> 16);
 	sw $s1, w		#
@@ -132,14 +169,14 @@ get_random:			# get random function returns random number
 	
 	move $v0, $t3		# moves ( m_z << 16 + m_w ) into return register
 	
-	lw $ra, 0($sp)		#
-	addi $sp, $sp, 4	#
-	lw $s1, 0($sp)		#
-	addi $sp, $sp, 4	#
-	lw $s0, 0($sp)		#
-	addi $sp, $sp, 4	#
+	lw $ra, 0($sp)		# Restore $ra to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
+	lw $s1, 0($sp)		# Restore $s1 to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
+	lw $s0, 0($sp)		# Restore $s0 to stack
+	addi $sp, $sp, 4	# Adjust stack pointer
 	
-	jr $ra			#
+	jr $ra			# return value
 	
 done: 
 
@@ -160,8 +197,10 @@ done:
 
 w:	.word 50000		# initializing 4 byte global variable int to 50000
 z:	.word 60000		# initializing 4 byte global variable int to 60000
-a:	.word 0			# initializing 4 btye variable a to binary NULL
-b:	.word 0			# initializing 4 byte variable b to binary NULL
+A:	.word 0			# initializing 4 btye variable a to binary NULL
+B:	.word 0			# initializing 4 byte variable b to binary NULL
 i:	.word 0			# initializing 4 byte variable b to binary NULL
-msg: 	.asciiz "GCD(" 		#tells user to enter string
-
+msg: 	.asciiz "GCD(" 		# contains message to print
+msg1: 	.asciiz "," 		# contains message to print
+msg2: 	.asciiz ") = " 		# contains message to print
+msg3:	.asciiz "\n" 		# contains message to print
