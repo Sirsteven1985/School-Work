@@ -152,9 +152,9 @@ except socket.error as msg:
     print("Description: " + str(msg))
     sys.exit()
 
-string_unicode = raw_bytes.decode('ascii')
-print("Received %d bytes from client" % len(raw_bytes))
-print("Message contents: %s" % string_unicode)
+
+print("Received %d bytes from client" % len(Total_bytes))
+
 
 try:
     s.close()
