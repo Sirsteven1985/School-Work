@@ -2,8 +2,8 @@
 
 # Simple network socket demo - CLIENT
 #
-# Set script as executable via: chmod +x client.py
-# Run via:  ./client.py <IP> <PORT>
+# Set script as executable via: chmod +x final_exam.py
+# Run via:  ./final_exam.py 10.10.5.203 3456
 #
 # To connect to a server on the same computer, <IP> could
 # either be 127.0.0.1 or localhost (they have the same meaning)
@@ -31,7 +31,7 @@ def main():
         sys.exit()
 
     print("Connecting to server at " + ip + " on port " + str(port))
-     
+         
     # Connect to server
     try:
         s.connect((ip , port))
@@ -40,10 +40,10 @@ def main():
         print("Description: " + str(msg))
         sys.exit()
  
-    print("Connection established")
-    
+
+       
     # Send message to server
-    string_unicode = "EXAM 1.0 REQUEST\r\nNumA: 1352\r\nNumB: 8307\r\nName: Steve Guerrero\r\n\r\n'"
+    string_unicode = "EXAM 1.0 REQUEST\r\nNumA: 1352\r\nNumB: 8307\r\nName: Steve Guerrero\r\n\r\n"
     raw_bytes = bytes(string_unicode,'ascii')
     
     try:
@@ -57,14 +57,29 @@ def main():
         sys.exit()
  
     print("Sent %d bytes to server" % bytes_sent)
+    
 
-    # Close socket
+    # Receive data
+    try:
+        buffer_size=4096
+        raw_bytes = s.recv(buffer_size)
+    except socket.error as msg:
+        print("Error: unable to recv()")
+        print("Description: " + str(msg))
+        sys.exit()
+
+    string_unicode = raw_bytes.decode('ascii')
+    print("Received %d bytes from client" % len(raw_bytes))
+    print("%s" % string_unicode)
+
+    # Close both sockets
     try:
         s.close()
     except socket.error as msg:
         print("Error: unable to close() socket")
         print("Description: " + str(msg))
         sys.exit()
+        
 
     print("Sockets closed, now exiting")
 
