@@ -20,7 +20,7 @@ import argparse
 import ctypes
 import random
 import socket
-import struct
+import struct 
 import string
 import sys
 import os
